@@ -1,29 +1,42 @@
 (function() {
     'use strict';
+    console.log(`running js`);
 
-    const button = document.querySelector('button');
-    const body = document.querySelector('body');
-    const banner = document.querySelector('#banner');
-    const sections = document.querySelectorAll('section')
-    let mode = 'dark';
+    const sections = document.querySelectorAll(`section`);
+    const anchors = document.querySelectorAll(`a`);
+    let mode = `light`;
 
-    button.addEventListener('click', function() {
-        if (mode === 'dark') {
-            body.className = 'switch';
-            banner.className = 'switch';
-            button.className = 'switch';
+    document.querySelector(`button`).addEventListener('click', function(event){
+        if (mode === `light`) {
+            console.log(`switching to dark mode`);
+
+            document.querySelector(`img`).setAttribute(`src`, `images/mug-empty.png`);
+            document.querySelector(`body`).className = `dark`;
+            document.querySelector(`button`).className =`dark`;
+            document.querySelector(`button`).innerText = `Refill`;
             for (const section of sections) {
-                section.className = 'switch';
+                section.className = `dark`;
             }
-            mode = 'light';
-        } else {
-            body.removeAttribute('class');
-            banner.removeAttribute('class');
-            button.removeAttribute('class');
+            for (const a of anchors) {
+                a.className = `dark`;
+            }
+
+            mode = `dark`;
+        } else if (mode === `dark`) {
+            console.log(`switching to light mode`);
+
+            document.querySelector(`img`).setAttribute(`src`, `images/mug-full.png`);
+            document.querySelector(`body`).removeAttribute(`class`);
+            document.querySelector(`button`).removeAttribute(`class`);
+            document.querySelector(`button`).innerText = `Drink`;
             for (const section of sections) {
-                section.removeAttribute('class');
+                section.removeAttribute(`class`);
             }
-            mode = 'dark'
+            for (const a of anchors) {
+                a.removeAttribute(`class`);
+            }
+
+            mode = `light`;
         }
-    })
+    });
 })()
