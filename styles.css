@@ -142,4 +142,8 @@ nav ol, nav ul {
         margin: 1em 0;
         padding: 0;
     }
+
+    #banner {
+        margin: 2em auto;
+    }
 }
