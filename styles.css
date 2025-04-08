@@ -112,3 +112,34 @@ nav ol, nav ul {
 }
 
 /* Desktop Layout */
+@media screen and (min-width: 800px) {
+    body {
+        text-align: start;
+    }
+
+    #container {
+        position: relative;
+        max-width: 1200px;
+        max-height: 750px;
+        margin: 4em auto 0 auto;
+        padding: 0 1em;
+    }
+
+    main {
+        flex-direction: row;
+        gap: 1em;
+        justify-content: space-between;
+    }
+
+    button {
+        position: absolute;
+        top: 0;
+        right: 1em;
+        margin: 0;
+    }
+
+    a {
+        margin: 1em 0;
+        padding: 0;
+    }
+}
