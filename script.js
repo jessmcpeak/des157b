@@ -10,7 +10,8 @@
         if (mode === `light`) {
             console.log(`switching to dark mode`);
 
-            document.querySelector(`img`).setAttribute(`src`, `images/mug-empty.png`);
+            document.querySelector(`#full-mug`).setAttribute(`class`, `hidden`);
+            document.querySelector(`#empty-mug`).setAttribute(`class`, `showing`);
             document.querySelector(`body`).className = `dark`;
             document.querySelector(`button`).className =`dark`;
             document.querySelector(`button`).innerText = `Refill`;
@@ -25,7 +26,8 @@
         } else if (mode === `dark`) {
             console.log(`switching to light mode`);
 
-            document.querySelector(`img`).setAttribute(`src`, `images/mug-full.png`);
+            document.querySelector(`#empty-mug`).setAttribute(`class`, `hidden`);
+            document.querySelector(`#full-mug`).setAttribute(`class`, `showing`);
             document.querySelector(`body`).removeAttribute(`class`);
             document.querySelector(`button`).removeAttribute(`class`);
             document.querySelector(`button`).innerText = `Drink`;

@@ -16,7 +16,10 @@ body {
     text-align: center;
     color: #33261A;
     background-color: #FFF2E6;
-    transition: all 0.1s ease-in-out;
+}
+
+body, #full-mug, #empty-mug {
+    transition: all 0.5s ease-in-out;
 }
 
 body.dark {
@@ -25,6 +28,7 @@ body.dark {
 }
 
 #banner {
+    position: relative;
     margin: 1em auto;
 }
 
@@ -109,6 +113,21 @@ nav ol, nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.showing {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#empty-mug {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 /* Desktop Layout */
