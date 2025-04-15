@@ -4,14 +4,7 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    animation-name: color-fade;
-    animation-duration: 24s;
-}
-
-@keyframes color-fade {
-    0% { filter: grayscale(100%); }
-    50% { filter: grayscale(100%); }
-    100% { filter: grayscale(0%); }
+    filter: grayscale(100%);
 }
 
 .fa-expand {
