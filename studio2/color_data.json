@@ -1,0 +1,502 @@
+[
+  {
+    "HEX": "#2e341b",
+    "Hue": 74,
+    "Gender": 1
+  },
+  {
+    "HEX": "#041f04",
+    "Hue": 120,
+    "Gender": 1
+  },
+  {
+    "HEX": "#064045",
+    "Hue": 185,
+    "Gender": 1
+  },
+  {
+    "HEX": "#417ab5",
+    "Hue": 211,
+    "Gender": 1
+  },
+  {
+    "HEX": "#475882",
+    "Hue": 223,
+    "Gender": 1
+  },
+  {
+    "HEX": "#193cb6",
+    "Hue": 227,
+    "Gender": 1
+  },
+  {
+    "HEX": "#132480",
+    "Hue": 231,
+    "Gender": 1
+  },
+  {
+    "HEX": "#2908b5",
+    "Hue": 251,
+    "Gender": 1
+  },
+  {
+    "HEX": "#5d8809",
+    "Hue": 80,
+    "Gender": 1
+  },
+  {
+    "HEX": "#6d8843",
+    "Hue": 83,
+    "Gender": 1
+  },
+  {
+    "HEX": "#577a37",
+    "Hue": 91,
+    "Gender": 1
+  },
+  {
+    "HEX": "#068c15",
+    "Hue": 127,
+    "Gender": 1
+  },
+  {
+    "HEX": "#2287e5",
+    "Hue": 209,
+    "Gender": 1
+  },
+  {
+    "HEX": "#0d50cb",
+    "Hue": 219,
+    "Gender": 1
+  },
+  {
+    "HEX": "#0a48fa",
+    "Hue": 225,
+    "Gender": 1
+  },
+  {
+    "HEX": "#539ce1",
+    "Hue": 209,
+    "Gender": 1
+  },
+  {
+    "HEX": "#0556f2",
+    "Hue": 219,
+    "Gender": 1
+  },
+  {
+    "HEX": "#126df8",
+    "Hue": 216,
+    "Gender": 1
+  },
+  {
+    "HEX": "#48d933",
+    "Hue": 112,
+    "Gender": 1
+  },
+  {
+    "HEX": "#5b5d24",
+    "Hue": 62,
+    "Gender": 2
+  },
+  {
+    "HEX": "#458e38",
+    "Hue": 111,
+    "Gender": 2
+  },
+  {
+    "HEX": "#15a355",
+    "Hue": 147,
+    "Gender": 2
+  },
+  {
+    "HEX": "#2c71b1",
+    "Hue": 209,
+    "Gender": 2
+  },
+  {
+    "HEX": "#3c7ebb",
+    "Hue": 209,
+    "Gender": 2
+  },
+  {
+    "HEX": "#1d013a",
+    "Hue": 269,
+    "Gender": 2
+  },
+  {
+    "HEX": "#398b1d",
+    "Hue": 105,
+    "Gender": 2
+  },
+  {
+    "HEX": "#0e9900",
+    "Hue": 115,
+    "Gender": 2
+  },
+  {
+    "HEX": "#09abf0",
+    "Hue": 198,
+    "Gender": 2
+  },
+  {
+    "HEX": "#4a6aba",
+    "Hue": 223,
+    "Gender": 2
+  },
+  {
+    "HEX": "#a0bd6b",
+    "Hue": 81,
+    "Gender": 2
+  },
+  {
+    "HEX": "#21bbe1",
+    "Hue": 192,
+    "Gender": 2
+  },
+  {
+    "HEX": "#538ef6",
+    "Hue": 218,
+    "Gender": 2
+  },
+  {
+    "HEX": "#1cdf07",
+    "Hue": 114,
+    "Gender": 2
+  },
+  {
+    "HEX": "#05e776",
+    "Hue": 150,
+    "Gender": 2
+  },
+  {
+    "HEX": "#66f0c2",
+    "Hue": 160,
+    "Gender": 2
+  },
+  {
+    "HEX": "#d7d97b",
+    "Hue": 61,
+    "Gender": 2
+  },
+  {
+    "HEX": "#c7f320",
+    "Hue": 73,
+    "Gender": 2
+  },
+  {
+    "HEX": "#46ff0d",
+    "Hue": 106,
+    "Gender": 2
+  },
+  {
+    "HEX": "#1ced16",
+    "Hue": 118,
+    "Gender": 2
+  },
+  {
+    "HEX": "#0ce415",
+    "Hue": 122,
+    "Gender": 2
+  },
+  {
+    "HEX": "#6e603c",
+    "Hue": 43,
+    "Gender": 3
+  },
+  {
+    "HEX": "#648f5b",
+    "Hue": 110,
+    "Gender": 3
+  },
+  {
+    "HEX": "#b2bebb",
+    "Hue": 165,
+    "Gender": 3
+  },
+  {
+    "HEX": "#5d5e7c",
+    "Hue": 238,
+    "Gender": 3
+  },
+  {
+    "HEX": "#bc7514",
+    "Hue": 35,
+    "Gender": 3
+  },
+  {
+    "HEX": "#6baf67",
+    "Hue": 117,
+    "Gender": 3
+  },
+  {
+    "HEX": "#27a370",
+    "Hue": 155,
+    "Gender": 3
+  },
+  {
+    "HEX": "#595b9a",
+    "Hue": 238,
+    "Gender": 3
+  },
+  {
+    "HEX": "#5138c7",
+    "Hue": 250,
+    "Gender": 3
+  },
+  {
+    "HEX": "#bba163",
+    "Hue": 42,
+    "Gender": 3
+  },
+  {
+    "HEX": "#b3dfe7",
+    "Hue": 189,
+    "Gender": 3
+  },
+  {
+    "HEX": "#74b0f7",
+    "Hue": 213,
+    "Gender": 3
+  },
+  {
+    "HEX": "#d5defc",
+    "Hue": 226,
+    "Gender": 3
+  },
+  {
+    "HEX": "#f63329",
+    "Hue": 3,
+    "Gender": 3
+  },
+  {
+    "HEX": "#ea863c",
+    "Hue": 26,
+    "Gender": 3
+  },
+  {
+    "HEX": "#d8ce42",
+    "Hue": 56,
+    "Gender": 3
+  },
+  {
+    "HEX": "#d7e117",
+    "Hue": 63,
+    "Gender": 3
+  },
+  {
+    "HEX": "#d9e367",
+    "Hue": 65,
+    "Gender": 3
+  },
+  {
+    "HEX": "#4ccf63",
+    "Hue": 131,
+    "Gender": 3
+  },
+  {
+    "HEX": "#91efaf",
+    "Hue": 139,
+    "Gender": 3
+  },
+  {
+    "HEX": "#59e98c",
+    "Hue": 141,
+    "Gender": 3
+  },
+  {
+    "HEX": "#48e584",
+    "Hue": 143,
+    "Gender": 3
+  },
+  {
+    "HEX": "#6ce3c1",
+    "Hue": 163,
+    "Gender": 3
+  },
+  {
+    "HEX": "#73d3ee",
+    "Hue": 193,
+    "Gender": 3
+  },
+  {
+    "HEX": "#f4d32b",
+    "Hue": 50,
+    "Gender": 3
+  },
+  {
+    "HEX": "#efee49",
+    "Hue": 60,
+    "Gender": 3
+  },
+  {
+    "HEX": "#dce752",
+    "Hue": 64,
+    "Gender": 3
+  },
+  {
+    "HEX": "#aaed37",
+    "Hue": 82,
+    "Gender": 3
+  },
+  {
+    "HEX": "#6bf409",
+    "Hue": 95,
+    "Gender": 3
+  },
+  {
+    "HEX": "#47fe90",
+    "Hue": 144,
+    "Gender": 3
+  },
+  {
+    "HEX": "#26f690",
+    "Hue": 151,
+    "Gender": 3
+  },
+  {
+    "HEX": "#3ef29c",
+    "Hue": 151,
+    "Gender": 3
+  },
+  {
+    "HEX": "#271540",
+    "Hue": 265,
+    "Gender": 4
+  },
+  {
+    "HEX": "#563aa2",
+    "Hue": 256,
+    "Gender": 4
+  },
+  {
+    "HEX": "#590e63",
+    "Hue": 293,
+    "Gender": 4
+  },
+  {
+    "HEX": "#421239",
+    "Hue": 311,
+    "Gender": 4
+  },
+  {
+    "HEX": "#8271fe",
+    "Hue": 247,
+    "Gender": 4
+  },
+  {
+    "HEX": "#8753a1",
+    "Hue": 280,
+    "Gender": 4
+  },
+  {
+    "HEX": "#88203c",
+    "Hue": 344,
+    "Gender": 4
+  },
+  {
+    "HEX": "#b43d51",
+    "Hue": 350,
+    "Gender": 4
+  },
+  {
+    "HEX": "#e3d1d3",
+    "Hue": 353,
+    "Gender": 4
+  },
+  {
+    "HEX": "#fdc250",
+    "Hue": 40,
+    "Gender": 4
+  },
+  {
+    "HEX": "#4d0d4d",
+    "Hue": 300,
+    "Gender": 5
+  },
+  {
+    "HEX": "#8b466e",
+    "Hue": 325,
+    "Gender": 5
+  },
+  {
+    "HEX": "#b61b7b",
+    "Hue": 323,
+    "Gender": 5
+  },
+  {
+    "HEX": "#bd156f",
+    "Hue": 328,
+    "Gender": 5
+  },
+  {
+    "HEX": "#ad105c",
+    "Hue": 331,
+    "Gender": 5
+  },
+  {
+    "HEX": "#d6a592",
+    "Hue": 17,
+    "Gender": 5
+  },
+  {
+    "HEX": "#b752fb",
+    "Hue": 276,
+    "Gender": 5
+  },
+  {
+    "HEX": "#c554e2",
+    "Hue": 288,
+    "Gender": 5
+  },
+  {
+    "HEX": "#ca0de4",
+    "Hue": 293,
+    "Gender": 5
+  },
+  {
+    "HEX": "#be2d99",
+    "Hue": 315,
+    "Gender": 5
+  },
+  {
+    "HEX": "#ca2462",
+    "Hue": 338,
+    "Gender": 5
+  },
+  {
+    "HEX": "#cd84f9",
+    "Hue": 277,
+    "Gender": 5
+  },
+  {
+    "HEX": "#c907d0",
+    "Hue": 298,
+    "Gender": 5
+  },
+  {
+    "HEX": "#ec7fc5",
+    "Hue": 321,
+    "Gender": 5
+  },
+  {
+    "HEX": "#f480c9",
+    "Hue": 322,
+    "Gender": 5
+  },
+  {
+    "HEX": "#ef0569",
+    "Hue": 334,
+    "Gender": 5
+  },
+  {
+    "HEX": "#bd93f9",
+    "Hue": 265,
+    "Gender": 5
+  },
+  {
+    "HEX": "#ef31cc",
+    "Hue": 311,
+    "Gender": 5
+  }
+]
