@@ -1,0 +1,80 @@
+/* resets */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transform: scale(50%);
+}
+
+
+/* typography */
+
+body {
+    font-family: "Inter";
+    font-size: 16px;
+    text-align: center;
+    color: hsl(0, 0%, 10%);
+}
+
+h1 {
+    margin: 2em 0 1.5em 0;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* layout */
+
+#color-circle {
+    margin: auto;
+    width: 80vw;
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    border-radius: 100vw;
+    background: conic-gradient(
+        #FF0000,
+        #FF8000,
+        #FFFF00,
+        #80FF00,
+        #00FF00,
+        #00FF80,
+        #00FFFF,
+        #0080FF,
+        #4040FF,
+        #8000FF,
+        #FF00FF,
+        #FF0080,
+        #FF0000);
+}
+
+ul {
+    margin: 4em 1em 0 1em;
+    display: flex;
+    justify-self: center;
+    align-items: start;
+    gap: 2em;
+}
+
+li img, li p {
+    margin: auto;
+}
+
+li img {
+    margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 620px) {
+
+    ul {
+        align-items: end;
+    }
+}
