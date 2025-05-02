@@ -59,6 +59,7 @@ h1 {
         #FF00FF,
         #FF0080,
         #FF0000);
+    transform: rotate(90deg);
 }
 
 button {
@@ -80,6 +81,10 @@ button {
 
 .hidden {
     opacity: 0;
+}
+
+.data-layer {
+    position: absolute;
 }
 
 @media screen and (min-width: 866px) {
