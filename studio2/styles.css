@@ -6,6 +6,7 @@
 
 img {
     display: block;
+    margin: 0;
     max-width: 100%;
     height: auto;
     transform: scale(50%);
@@ -18,21 +19,25 @@ body {
     font-family: "Inter";
     font-size: 16px;
     text-align: center;
-    color: hsl(0, 0%, 10%);
 }
 
 h1 {
-    margin: 2em 0 1.5em 0;
     font-size: 2em;
     font-weight: 600;
+    color: hsl(0, 0%, 10%);
 }
 
-ul {
-    padding: 0;
-    list-style-type: none;
+p {
+    line-height: 100%;
+    margin: 0;
 }
+
 
 /* layout */
+
+h1 {
+    margin: 1em 0;
+}
 
 #color-circle {
     margin: auto;
@@ -56,25 +61,40 @@ ul {
         #FF0000);
 }
 
-ul {
-    margin: 4em 1em 0 1em;
+button {
     display: flex;
-    justify-self: center;
-    align-items: start;
-    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    color: hsl(0, 0%, 10%);
+    background-color: #FFFFFF;
+    border: 1px solid #e6e6e6;
+    border-radius: 100000px;
+    transition: all 0.2s ease-in-out;
 }
 
-li img, li p {
-    margin: auto;
+.active {
+    background-color: #e6e6e6;
 }
 
-li img {
-    margin-bottom: 0.5em;
+.hidden {
+    opacity: 0;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 866px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-    ul {
-        align-items: end;
+    #buttons {
+        display: flex;
+        gap: 1em;
+        margin: auto;
+    }
+
+    button {
+        margin: 0;
     }
 }
