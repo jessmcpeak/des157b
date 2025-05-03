@@ -12,18 +12,28 @@
             console.log(key, result[key]);
             if (result[key].Gender === 1) {
                 document.querySelector(`#masc-data`).innerHTML += `<img alt="Mars symbol" src="images/mars.png">`;
+                document.querySelector(`#masc-data`).lastChild.style.left = `${266 * Math.cos((result[key].Hue * Math.PI) / 180)}px`;
+                document.querySelector(`#masc-data`).lastChild.style.top = `${266 * Math.sin((result[key].Hue * Math.PI) / 180)}px`;
             }
             else if (result[key].Gender === 2) {
                 document.querySelector(`#slight-masc-data`).innerHTML += `<img alt="Mars symbol without the arrow tip" src="images/notmars.png">`;
+                document.querySelector(`#slight-masc-data`).lastChild.style.left = `${266 * Math.cos((result[key].Hue * Math.PI) / 180)}px`;
+                document.querySelector(`#slight-masc-data`).lastChild.style.top = `${266 * Math.sin((result[key].Hue * Math.PI) / 180)}px`;
             }
             else if (result[key].Gender === 3) {
                 document.querySelector(`#neutral-data`).innerHTML += `<img alt="Circle" src="images/neutral.png">`;
+                document.querySelector(`#neutral-data`).lastChild.style.left = `${266 * Math.cos((result[key].Hue * Math.PI) / 180)}px`;
+                document.querySelector(`#neutral-data`).lastChild.style.top = `${266 * Math.sin((result[key].Hue * Math.PI) / 180)}px`;
             }
             else if (result[key].Gender === 4) {
                 document.querySelector(`#slight-fem-data`).innerHTML += `<img alt="Venus symbol without the crossbar" src="images/notvenus.png">`;
+                document.querySelector(`#slight-fem-data`).lastChild.style.left = `${266 * Math.cos((result[key].Hue * Math.PI) / 180)}px`;
+                document.querySelector(`#slight-fem-data`).lastChild.style.top = `${266 * Math.sin((result[key].Hue * Math.PI) / 180)}px`;
             }
             else if (result[key].Gender === 5) {
                 document.querySelector(`#fem-data`).innerHTML += `<img alt="Venus symbol" src="images/venus.png">`;
+                document.querySelector(`#fem-data`).lastChild.style.left = `${266 * Math.cos((result[key].Hue * Math.PI) / 180)}px`;
+                document.querySelector(`#fem-data`).lastChild.style.top = `${266 * Math.sin((result[key].Hue * Math.PI) / 180)}px`;
             }
         }
     }

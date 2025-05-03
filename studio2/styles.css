@@ -24,7 +24,7 @@ body {
 h1 {
     font-size: 2em;
     font-weight: 600;
-    color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 50%);
 }
 
 p {
@@ -32,6 +32,15 @@ p {
     margin: 0;
 }
 
+a {
+    color: hsl(0, 0%, 50%);
+}
+
+#caption {
+    line-height: 150%;
+    text-align: left;
+    color: hsl(0, 0%, 50%);
+}
 
 /* layout */
 
@@ -41,8 +50,7 @@ h1 {
 
 #color-circle {
     margin: auto;
-    width: 80vw;
-    max-width: 500px;
+    width: 500px;
     aspect-ratio: 1/1;
     border-radius: 100vw;
     background: conic-gradient(
@@ -62,13 +70,20 @@ h1 {
     transform: rotate(90deg);
 }
 
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 0;
+}
+
 button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1em auto;
+    margin: 0;
     padding: 0.5em 1em;
-    color: hsl(0, 0%, 10%);
+    color: hsl(0, 0%, 25%);
     background-color: #FFFFFF;
     border: 1px solid #e6e6e6;
     border-radius: 100000px;
@@ -84,22 +99,21 @@ button {
 }
 
 .data-layer {
-    position: absolute;
+    position: relative;
+    top: -250px;
+    left: 50%;
 }
 
-@media screen and (min-width: 866px) {
-    main {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+.data-layer img {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(50%);
+}
 
-    #buttons {
-        display: flex;
-        gap: 1em;
-        margin: auto;
-    }
+#caption {
+    margin: 0 auto;
+    width: 800px;
+}
 
-    button {
-        margin: 0;
-    }
+#data-vis {
+    margin: 3em 0 3.5em 0;
 }
