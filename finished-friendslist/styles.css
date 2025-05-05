@@ -1,4 +1,5 @@
 /*********** Basic Resets ************/
+
 h1, h2, h3, p, ol, li { 
     margin: 0;
     padding: 0;
@@ -111,6 +112,14 @@ footer a {
     color: #0746a5;
 }
 
+.remove {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    transition: all 1s;
+}
+
+
 /*************** Forms ****************/
 
 #add-friend, #edit-friend {
@@ -188,11 +197,4 @@ input {
     border-bottom-left-radius: 0px;
     border-left: none;
     padding: 0 5px;
-}
-
-.remove {
-    opacity: 0;
-    height: 0;
-    padding: 0;
-    transition: all 1s;
 }

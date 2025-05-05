@@ -1,9 +1,8 @@
+Parse.initialize("B2kZJW7QXMDTILSz5USV3ngQaQyIIgAfzjUZ6CgU", "RzrtpkaLWmpVJyECj6UghjrTgPdjZ50Kz9yTJ56Z");
+Parse.serverURL = "https://parseapi.back4app.com/";
+
 (function(){
-    Parse.initialize("B2kZJW7QXMDTILSz5USV3ngQaQyIIgAfzjUZ6CgU", "RzrtpkaLWmpVJyECj6UghjrTgPdjZ50Kz9yTJ56Z");
-    Parse.serverURL = "https://parseapi.back4app.com/";
-    
     const newButton = document.querySelector(`#newbtn`);
-    // const editButtons = document.querySelectorAll(`.fa-edit`);
     const addFriendForm = document.querySelector(`#add-friend`);
     const editFriendForm = document.querySelector(`#edit-friend`);
     const friendList = document.querySelector(`main ol`);
@@ -69,7 +68,7 @@
     
     addFriendForm.addEventListener(`submit`, function(event){
         event.preventDefault();
-        // addFriendForm.className = `add-friend-offscreen`;
+
         addFriend();
     });
     
@@ -131,17 +130,8 @@
     
     // Start update friend info
     
-    /* for (let i=0; i<editButtons.length; i++) {
-        editButtons[i].addEventListener(`click`, function(event){
-            event.preventDefault();
-    
-            editFriendForm.className = `edit-friend-onscreen`;
-        });
-    } */
-    
     document.addEventListener(`click`, function(event){
         if (event.target.className === `fas fa-edit`) {
-            // editFriendForm.className = `edit-friend-onscreen`;
             thisRecord = event.target.getAttribute(`id`).slice(2);
             // console.log(thisRecord);
             setForm(thisRecord);
@@ -179,8 +169,6 @@
     
     editFriendForm.addEventListener(`submit`, function(event){
         event.preventDefault();
-    
-        // editFriendForm.className = `edit-friend-offscreen`;
     
         updateRecord(thisRecord);
     });
@@ -260,4 +248,6 @@
             }
         }
     }
+
+    // End delete friend
 })();
