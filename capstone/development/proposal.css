@@ -41,12 +41,20 @@ a {
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-    color: #FFF2E6;
     border-radius: 1000px;
+    color: #33261A;
+    background-color: #FFF2E6;
+    border: 1px solid #33261A;
+    transition: all 0.1s ease-in-out;
+}
+
+a:hover {
+    color: #FFF2E6;
     background-color: #33261A;
 }
 
 footer {
+    margin-top: 3em;
     padding: 0 0 4em 0;
 }
 
