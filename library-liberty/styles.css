@@ -6,18 +6,35 @@
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
 /* Typography */
 
+h1, p {
+    text-align: center;
+}
+
 h1 {
     font-family: "Neonderthaw";
     font-weight: 400;
+    font-size: 15vw;
+    line-height: 100%;
 }
 
 p {
     font-family: "Tilt Neon";
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -28,12 +45,34 @@ header, main, section, footer {
 }
 
 header, section {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
+h1 {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -80%);
+}
+
+#scroll {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 footer {
-    width: 100vw;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 2em 0;
 }
 
 
@@ -71,5 +110,36 @@ header {
 }
 
 footer {
-    background-color: #411035;
+    background-color: hsl(315, 60%, 16%);
+}
+
+h1, p {
+    color: #fff;
+}
+
+h1 {
+    text-shadow: 0 0 20px hsl(330, 100%, 50%);
+}
+
+a {
+    color: hsl(330, 100%, 75%);
+}
+
+
+/* Animations */
+
+h1 {
+    animation: floating 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(-80);
+    }
+    50% {
+        transform: translateY(-90%);
+    }
+    100% {
+        transform: translateY(-80%);
+    }
 }
