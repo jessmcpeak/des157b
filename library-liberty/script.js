@@ -1,3 +1,5 @@
+AOS.init();
+
 function sketch1(p) {
     let starCenterX = 420;
     let starCenterY = 250;
