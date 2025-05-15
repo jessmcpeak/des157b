@@ -1,0 +1,75 @@
+/* CSS Resets */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+
+/* Typography */
+
+h1 {
+    font-family: "Neonderthaw";
+    font-weight: 400;
+}
+
+p {
+    font-family: "Tilt Neon";
+}
+
+
+/* Layout */
+
+header, main, section, footer {
+    margin: 0;
+}
+
+header, section {
+    width: 100vw;
+    height: 100vh;
+}
+
+footer {
+    width: 100vw;
+}
+
+
+/* Color */
+
+body {
+    background-image: url(images/noise-texture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header, main, section, footer {
+    mix-blend-mode: hard-light;
+}
+
+header {
+    background-color: #101040;
+}
+
+#section1 {
+    background-color: #1C1040;
+}
+
+#section2 {
+    background-color: #281040;
+}
+
+#section3 {
+    background-color: #341040;
+}
+
+#section4 {
+    background-color: #401040;
+}
+
+footer {
+    background-color: #411035;
+}
