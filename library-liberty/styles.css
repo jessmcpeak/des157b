@@ -75,6 +75,10 @@ footer p {
     padding: 2em 0;
 }
 
+section {
+    display: grid;
+    place-content: center;
+}
 
 /* Color */
 
@@ -119,6 +123,11 @@ h1, p {
 
 h1 {
     text-shadow: 0 0 20px hsl(330, 100%, 50%);
+}
+
+section div {
+    border: 1px solid white;
+    box-shadow: 0 0 20px hsl(330, 100%, 50%);
 }
 
 a {
