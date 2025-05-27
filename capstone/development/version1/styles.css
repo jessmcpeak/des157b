@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 4fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b"
+                         "c b"
+                         "d d"
+                         "e f";
+    margin: 10vh 10vw;
+}
+
+#portrait {
+    grid-area: a;
+}
+
+#documents {
+    grid-area: c;
+}
+
+#doc-closeup {
+    grid-area: b;
+}
+
+#dialogue {
+    grid-area: d;
+}
+
+#deny {
+    grid-area: e;
+}
+
+#accept {
+    grid-area: f;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+div {
+    border: 1px solid #fff;
+}
