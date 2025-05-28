@@ -4,19 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
     <!-- custom css -->
     <link href="styles.css" rel="stylesheet">
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <!-- interact.js -->
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+
+    <!-- parse.js -->
+    <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js" defer></script>
 
     <title>Capstone Version 1</title>
 </head>
 <body>
     <div id="container">
-        <div id="portrait"></div>
-        <div id="documents"></div>
-        <div id="doc-closeup"></div>
-        <div id="dialogue"></div>
-        <button id="deny"></button>
-        <button id="accept"></button>
+        <div id="portrait">
+            <img alt="ai character portrait" src="images/ai-portrait.png">
+        </div>
+
+        <div id="docs">
+            <div class="doc draggable droppable"></div>
+            <div class="doc draggable droppable"></div>
+            <div class="doc draggable droppable"></div>
+        </div>
+
+        <div id="doc-closeup" class="dropzone"></div>
+
+        <div id="dialogue">
+            <p>> Hello. Here are my documents.</p>
+        </div>
+
+        <button id="deny">deny</button>
+        <button id="accept">accept</button>
     </div>
 </body>
 </html>
