@@ -1,0 +1,82 @@
+[
+    {
+        "scene": "introduction",
+        "dialogue": [
+            {
+                "charID": "o-brian",
+                "type": "spoken",
+                "charName": "o'brian",
+                "text": "This is what O'Brian's spoken dialogue looks like."
+            },
+            {
+                "charID": "o-brian",
+                "type": "action",
+                "charName": "o'brian",
+                "text": "This is what O'Brian's action text looks like."
+            },
+            {
+                "charID": "hart",
+                "type": "spoken",
+                "charName": "hart",
+                "text": "This is what Hart's spoken dialogue looks like."
+            },
+            {
+                "charID": "hart",
+                "type": "action",
+                "charName": "hart",
+                "text": "This is what Hart's action text looks like."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "This is what Aida's spoken dialogue looks like."
+            },
+            {
+                "charID": "aida",
+                "type": "action",
+                "charName": "aida",
+                "text": "This is what Aida's action text looks like."
+            },
+            {
+                "charID": "you",
+                "type": "spoken",
+                "charName": "you",
+                "text": "This is what your spoken dialogue looks like."
+            },
+            {
+                "charID": "you",
+                "type": "action",
+                "charName": "you",
+                "text": "This is what your action text looks like."
+            },
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "This is what information text looks like."
+            },
+            {
+                "type": "choice",
+                "text": [
+                    {
+                        "type": "spoken",
+                        "text": "This is what a spoken dialogue choice looks like."
+                    },
+                    {
+                        "type": "action",
+                        "text": "This is what an action choice looks like."
+                    },
+                    {
+                        "type": "action",
+                        "text": "This is what a selected option looks like."
+                    },
+                    {
+                        "type": "action",
+                        "text": "This is what a back out choice looks like. [Change the subject.]"
+                    }
+                ]
+            }
+        ]
+    }
+]

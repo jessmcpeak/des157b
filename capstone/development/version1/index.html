@@ -15,37 +15,34 @@
     <!-- gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
-    <!-- interact.js -->
-    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
-
-    <!-- parse.js -->
-    <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
-
     <!-- custom js -->
     <script src="script.js" defer></script>
 
     <title>Capstone Version 1</title>
 </head>
 <body>
-    <div id="container">
-        <div id="portrait">
-            <img alt="ai character portrait" src="images/ai-portrait.png">
-        </div>
-
-        <div id="docs">
-            <div class="doc draggable droppable"></div>
-            <div class="doc draggable droppable"></div>
-            <div class="doc draggable droppable"></div>
-        </div>
-
-        <div id="doc-closeup" class="dropzone"></div>
-
-        <div id="dialogue">
-            <p>> Hello. Here are my documents.</p>
-        </div>
-
-        <button id="deny">deny</button>
-        <button id="accept">accept</button>
+    <div id="dialogue-box">
+        <p class="o-brian spoken">
+            <span class="name">O'BRIAN</span>
+            <span class="spacer"> — </span>
+            <span>&ldquo;</span><span class="text">This is what O'Brian's spoken dialogue looks like.</span><span>&rdquo;</span>
+        </p>
+        <p class="o-brian action">O'BRIAN — This is what O'Brian's action text looks like.</p>
+        <p class="hart spoken">HART — "This is what Hart's spoken dialogue looks like."</p>
+        <p class="hart action">HART — This is what Hart's action text looks like.</p>
+        <p class="aida spoken">AIDA — "This is what Aida's spoken dialogue looks like."</p>
+        <p class="aida action">AIDA — This is what Aida's action text looks like.</p>
+        <p class="you spoken">YOU — "This is what your spoken dialogue looks like."</p>
+        <p class="you action">YOU — This is what your action text looks like.</p>
+        <p class="information">INFORMATION — This is what information text looks like.</p>
+        <ol class="choices">
+            <li><p>— "This is what a spoken dialogue choice looks like."</p></li>
+            <li><p>— This is what an action choice looks like.</p></li>
+            <li><p>— This is what a selected option looks like.</p></li>
+            <li><p>— This is what a back out choice looks like. [Change the subject.]</p></li>
+        </ol>
+        <button class="continue inactive">CONTINUE →</button>
+        <button class="continue active">CONTINUE →</button>
     </div>
 </body>
 </html>
