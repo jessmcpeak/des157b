@@ -1,5 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    overflow: hidden;
     margin: 0;
     font-family: "Syne Mono";
     font-size: 20px;
@@ -9,9 +12,9 @@ body {
 }
 
 #dialogue-box {
-    overflow: scroll;
+    overflow-y: scroll;
     margin: 0 5vw 0 auto;
-    padding: 1em 2em;
+    padding: 12.5vh 2em 25vh 2em;
     width: 30vw;
     height: 100vh;
     border-right: 1px solid #FFFFFF;
@@ -49,4 +52,47 @@ li p {
 
 .aida {
     color: #00FFFF;
+}
+
+.inactive {
+    color: #808080;
+    border: 1px solid #808080;
+}
+
+.active {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.active:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.unselected {
+    color: #808080;
+}
+
+.selected {
+    color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+}
+
+.action .text {
+    font-style: italic;
+}
+
+.name {
+    text-transform: uppercase;
 }

@@ -1,6 +1,6 @@
-[
-    {
-        "scene": "introduction",
+{
+    "introduction": {
+        "visited": false,
         "dialogue": [
             {
                 "charID": "o-brian",
@@ -61,22 +61,26 @@
                 "text": [
                     {
                         "type": "spoken",
-                        "text": "This is what a spoken dialogue choice looks like."
+                        "text": "This is what a spoken dialogue choice looks like.",
+                        "next-scene": "introduction"
                     },
                     {
                         "type": "action",
-                        "text": "This is what an action choice looks like."
+                        "text": "This is what an action choice looks like.",
+                        "next-scene": "introduction"
                     },
                     {
                         "type": "action",
-                        "text": "This is what a selected option looks like."
+                        "text": "This is what a selected option looks like.",
+                        "next-scene": "introduction"
                     },
                     {
                         "type": "action",
-                        "text": "This is what a back out choice looks like. [Change the subject.]"
+                        "text": "This is what a back out choice looks like. [Change the subject.]",
+                        "next-scene": "introduction"
                     }
                 ]
             }
         ]
     }
-]
+}
