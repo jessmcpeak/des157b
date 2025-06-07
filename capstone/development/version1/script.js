@@ -2,43 +2,49 @@
     `use strict`;
     console.log(`running js`);
 
-    document.querySelector(`.choices li p`);
+    let scenePointer = `introduction`;
+    let lineCounter = 0;
+    let dialogueData;
 
     async function getData(){
         const response = await fetch(`data/dialogue_data.json`);
         const result = await response.json();
         console.log(result);
-        playScene(result);
+        dialogueData = result;
+        playScene(dialogueData, lineCounter);
     }
     getData();
 
-    function playScene(data) {
-        let scenePointer;
-        if (scenePointer) {
-
+    function playScene(data, counter) {
+        let line = data[scenePointer].dialogue[counter];
+        let newLine = document.createElement(`p`);
+        newLine.setAttribute(`class`, `${line.charID} ${line.type}`);
+        let string = ``;
+        if (line.type === `spoken`) {
+            string = `<span class="name">${line.charName}</span>
+                        <span class="spacer"> — </span>
+                        <span>&ldquo;</span><span class="text">${line.text}</span><span>&rdquo;</span>`;
         } else {
-            for (let line of data.introduction.dialogue) {
-                let msg = document.createElement(`p`);
-                let string = ``;
-                if (line.type === `spoken`) {
-                    string = `<p class="${line.charID} ${line.type}">
-                                    <span class="name">${line.charName}</span>
-                                    <span class="spacer"> — </span>
-                                    <span>&ldquo;</span><span class="text">${line.text}</span><span>&rdquo;</span>
-                                </p>`;
-                } else {
-                    string = `<p class="${line.charID} ${line.type}">
-                                    <span class="name">${line.charName}</span>
-                                    <span class="spacer"> — </span>
-                                    <span class="text">${line.text}</span>
-                                </p>`;
-                }
-                msg.innerHTML = string;
-                document.querySelector(`#dialogue-box`).appendChild(msg);
-            }
+            string = `<span class="name">${line.charName}</span>
+                        <span class="spacer"> — </span>
+                        <span class="text">${line.text}</span>`;
+        }
+        newLine.innerHTML = string;
+        // document.querySelector(`#dialogue-box`).appendChild(newLine);
+        document.querySelector(`#dialogue-box`).insertBefore(newLine, document.querySelector(`button`));
+
+        if (counter === 0) {
+            document.querySelector(`button`).classList.remove(`hidden`);
         }
 
+        document.querySelector(`#dialogue-box`).scrollTo(0, document.querySelector(`#dialogue-box`).scrollHeight);
     }
+
+    document.querySelector(`button`).addEventListener(`click`, function(event){
+        event.preventDefault();
+        lineCounter++;
+        playScene(dialogueData, lineCounter);
+    });
 
     // scene start
     // display initial text
@@ -52,8 +58,4 @@
     // continue button is active
     // user hits continue
     // scene start
-
-    // document.querySelector(`button .active`).addEventListener(`click`, function(event){
-    //     event.preventDefault();
-    // });
 })();

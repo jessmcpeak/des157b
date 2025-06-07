@@ -55,31 +55,28 @@
                 "type": "information",
                 "charName": "information",
                 "text": "This is what information text looks like."
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "This is what a spoken dialogue choice looks like.",
+                "next-scene": "introduction"
             },
             {
-                "type": "choice",
-                "text": [
-                    {
-                        "type": "spoken",
-                        "text": "This is what a spoken dialogue choice looks like.",
-                        "next-scene": "introduction"
-                    },
-                    {
-                        "type": "action",
-                        "text": "This is what an action choice looks like.",
-                        "next-scene": "introduction"
-                    },
-                    {
-                        "type": "action",
-                        "text": "This is what a selected option looks like.",
-                        "next-scene": "introduction"
-                    },
-                    {
-                        "type": "action",
-                        "text": "This is what a back out choice looks like. [Change the subject.]",
-                        "next-scene": "introduction"
-                    }
-                ]
+                "type": "action",
+                "text": "This is what an action choice looks like.",
+                "next-scene": "introduction"
+            },
+            {
+                "type": "action",
+                "text": "This is what a selected option looks like.",
+                "next-scene": "introduction"
+            },
+            {
+                "type": "action",
+                "text": "This is what a back out choice looks like. [Change the subject.]",
+                "next-scene": "introduction"
             }
         ]
     }
