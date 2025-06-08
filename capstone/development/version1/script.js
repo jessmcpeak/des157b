@@ -55,20 +55,26 @@
                 }
                 listItem.innerHTML = string;
                 list.appendChild(listItem);
-                document.querySelector(`ol li:last-of-type`).addEventListener(`click`, function(event){
+                function optionListener(para) {
                     items = document.querySelectorAll(`ol li`);
                     for (item of items) {
                         item.classList.remove(`selected`);
                         item.classList.add(`unselected`);
                     }
                     scenePointer = `${option.nextScene}`;
-                    event.currentTarget.classList.remove(`unselected`);
-                    event.currentTarget.classList.add(`selected`);
+                    para.classList.remove(`unselected`);
+                    para.classList.add(`selected`);
                     lineCounter = 0;
 
                     document.querySelector(`button`).setAttribute(`class`, `active`);
                     document.querySelector(`button`).addEventListener(`click`, playScene);
-                });
+                }
+                const oldLists = document.querySelectorAll(`ol:not(:last-of-type) li`);
+                for (item of oldLists) {
+                    console.log(item);
+                    item.removeEventListener(`click`, function(event) { optionListener(event.currentTarget) });
+                }
+                document.querySelector(`ol:last-of-type li:last-of-type`).addEventListener(`click`, function(event) { optionListener(event.currentTarget) });
             }
         }
 
