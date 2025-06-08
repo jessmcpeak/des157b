@@ -11,40 +11,69 @@
         const result = await response.json();
         console.log(result);
         dialogueData = result;
-        playScene(dialogueData, lineCounter);
+        playScene();
     }
     getData();
 
-    function playScene(data, counter) {
-        let line = data[scenePointer].dialogue[counter];
-        let newLine = document.createElement(`p`);
-        newLine.setAttribute(`class`, `${line.charID} ${line.type}`);
-        let string = ``;
-        if (line.type === `spoken`) {
-            string = `<span class="name">${line.charName}</span>
-                        <span class="spacer"> — </span>
-                        <span>&ldquo;</span><span class="text">${line.text}</span><span>&rdquo;</span>`;
-        } else {
-            string = `<span class="name">${line.charName}</span>
-                        <span class="spacer"> — </span>
-                        <span class="text">${line.text}</span>`;
-        }
-        newLine.innerHTML = string;
-        // document.querySelector(`#dialogue-box`).appendChild(newLine);
-        document.querySelector(`#dialogue-box`).insertBefore(newLine, document.querySelector(`button`));
+    function playScene() {
+        if (lineCounter < dialogueData[scenePointer].dialogue.length) {
+            let line = dialogueData[scenePointer].dialogue[lineCounter];
+            let newLine = document.createElement(`p`);
+            newLine.setAttribute(`class`, `${line.charID} ${line.type}`);
+            let string = ``;
+            if (line.type === `spoken`) {
+                string = `<span class="name">${line.charName}</span>
+                            <span class="spacer"> — </span>
+                            <span>&ldquo;</span><span class="text">${line.text}</span><span>&rdquo;</span>`;
+            } else {
+                string = `<span class="name">${line.charName}</span>
+                            <span class="spacer"> — </span>
+                            <span class="text">${line.text}</span>`;
+            }
+            newLine.innerHTML = string;
+            document.querySelector(`#dialogue-box`).insertBefore(newLine, document.querySelector(`button`));
 
-        if (counter === 0) {
             document.querySelector(`button`).classList.remove(`hidden`);
+            lineCounter++;
+            document.querySelector(`button`).addEventListener(`click`, playScene);
+        }
+        else if (lineCounter >= dialogueData[scenePointer].dialogue.length) {
+            document.querySelector(`button`).setAttribute(`class`, `inactive`);
+            document.querySelector(`button`).removeEventListener(`click`, playScene);
+            let list = document.createElement(`ol`);
+            document.querySelector(`#dialogue-box`).insertBefore(list, document.querySelector(`button`));
+            for (let option of dialogueData[scenePointer].choice) {
+                let listItem = document.createElement(`li`);
+                listItem.setAttribute(`class`, `${option.type} unselected`);
+                let string = ``;
+                if (option.type === `spoken`) {
+                    string = `<span class="spacer"> — </span>
+                        <span>&ldquo;</span><span class="text">${option.text}</span><span>&rdquo;</span>`;
+                } else {
+                        string = `<span class="spacer"> — </span>
+                        <span class="text">${option.text}</span>`;
+                }
+                listItem.innerHTML = string;
+                list.appendChild(listItem);
+                document.querySelector(`ol li:last-of-type`).addEventListener(`click`, function(event){
+                    items = document.querySelectorAll(`ol li`);
+                    for (item of items) {
+                        item.classList.remove(`selected`);
+                        item.classList.add(`unselected`);
+                    }
+                    scenePointer = `${option.nextScene}`;
+                    event.currentTarget.classList.remove(`unselected`);
+                    event.currentTarget.classList.add(`selected`);
+                    lineCounter = 0;
+
+                    document.querySelector(`button`).setAttribute(`class`, `active`);
+                    document.querySelector(`button`).addEventListener(`click`, playScene);
+                });
+            }
         }
 
         document.querySelector(`#dialogue-box`).scrollTo(0, document.querySelector(`#dialogue-box`).scrollHeight);
     }
-
-    document.querySelector(`button`).addEventListener(`click`, function(event){
-        event.preventDefault();
-        lineCounter++;
-        playScene(dialogueData, lineCounter);
-    });
 
     // scene start
     // display initial text

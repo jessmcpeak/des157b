@@ -39,8 +39,13 @@ p, button {
     margin: 1em 0;
 }
 
-li p {
+li {
     margin: 0;
+}
+
+li:hover {
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .o-brian {
