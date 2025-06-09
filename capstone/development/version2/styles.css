@@ -35,10 +35,6 @@ button {
     background-color: #000000;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
 p, button {
     margin: 1em 0;
 }
@@ -88,6 +84,7 @@ li {
 .active:hover {
     color: #000000;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
 .unselected {
