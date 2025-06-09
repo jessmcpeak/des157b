@@ -26,17 +26,19 @@
         // if this scene is new, play dialogue line by line
         if (dialogueData[scenePointer].visited === false) {
             // if there's dialogue, play the dialogue line by line
-            if (lineCounter < dialogueData[scenePointer].dialogue.length) {
-                let line = dialogueData[scenePointer].dialogue[lineCounter];
+            let line = dialogueData[scenePointer].dialogue[lineCounter];
+            if (lineCounter < dialogueData[scenePointer].dialogue.length - 1) {
                 addDialogue(line);
                 document.querySelector(`button`).classList.remove(`hidden`);
                 lineCounter++;
                 document.querySelector(`button`).addEventListener(`click`, playScene);
             }
             // if the dialogue is finished, present the choices
-            else if (lineCounter >= dialogueData[scenePointer].dialogue.length) {
+            else if (lineCounter >= dialogueData[scenePointer].dialogue.length - 1) {
+                addDialogue(line);
                 addChoices();
             }
+            document.querySelector(`#dialogue-box`).scrollTo(0, document.querySelector(`#dialogue-box`).scrollHeight);
         }
         // if the scene has been visited before, play the whole scene at once, skipping to the choice
         else if (dialogueData[scenePointer].visited === true) {
@@ -47,8 +49,6 @@
             // present the choices
             addChoices();
         }
-
-        document.querySelector(`#dialogue-box`).scrollTo(0, document.querySelector(`#dialogue-box`).scrollHeight);
     }
 
     function addDialogue(line) {
