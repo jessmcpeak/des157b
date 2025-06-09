@@ -135,7 +135,13 @@
                 "charID": "aida",
                 "type": "spoken",
                 "charName": "aida",
-                "text": "Some important cognitive capabilities discussed as part of moral standing are intelligence, rationality, autonomy, and agency. Which would you like to discuss?"
+                "text": "Some important cognitive capabilities discussed as part of moral standing are intelligence, rationality, autonomy, and agency."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Which would you like to discuss?"
             }
         ],
         "choice": [
@@ -377,7 +383,13 @@
                 "charID": "aida",
                 "type": "spoken",
                 "charName": "aida",
-                "text": "Some important psychological capacities discussed as part of moral standing are consciousness, self-awareness, sentience, emotions, and desires. Which would you like to discuss?"
+                "text": "Some important psychological capacities discussed as part of moral standing are consciousness, self-awareness, sentience, emotions, and desires."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Which would you like to discuss?"
             }
         ],
         "choice": [
@@ -718,7 +730,13 @@
                 "charID": "aida",
                 "type": "spoken",
                 "charName": "aida",
-                "text": "Some important philosophical concepts discussed as part of moral standing are personhood, intrinsic moral significance, and moral status. Which would you like to discuss?"
+                "text": "Some important philosophical concepts discussed as part of moral standing are personhood, intrinsic moral significance, and moral status."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Which would you like to discuss?"
             }
         ],
         "choice": [
@@ -889,7 +907,13 @@
                 "charID": "aida",
                 "type": "spoken",
                 "charName": "aida",
-                "text": "Some behavioral and relational considerations are behavioral equivalence, cognitive equivalence, social valence, social relations, potentiality, and class membership. Which would you like to discuss?"
+                "text": "Some behavioral and relational considerations are behavioral equivalence, cognitive equivalence, social valence, social relations, potentiality, and class membership."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Which would you like to discuss?"
             }
         ],
         "choice": [
