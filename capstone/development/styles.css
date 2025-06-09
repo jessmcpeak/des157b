@@ -6,12 +6,13 @@ body {
     margin: auto;
     padding: 0 1.5em;
     max-width: 700px;
-    font-family: Helvetica;
+    font-family: Georgia;
     color: #33261A;
     background-color: #FFF2E6;
 }
 
 h1, h2, h3 {
+    font-family: Helvetica;
     font-weight: 600;
     line-height: 100%;
 }
@@ -29,8 +30,7 @@ h3 {
     font-size: 16px;
 }
 
-p {
-    font-family: Georgia;
+p, li {
     font-size: 18px;
     line-height: 160%;
 }
@@ -38,6 +38,7 @@ p {
 a {
     display: block;
     padding: 1em;
+    font-family: Helvetica;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
