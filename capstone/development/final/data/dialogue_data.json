@@ -111,7 +111,7 @@
                 "charID": "aida",
                 "type": "spoken",
                 "charName": "aida",
-                "text": "Some important cognitive capabilities of beings with moral standing are intelligence, rationality, autonomy, and agency. Which would you like to discuss?"
+                "text": "Some important cognitive capabilities discussed as part of moral standing are intelligence, rationality, autonomy, and agency. Which would you like to discuss?"
             }
         ],
         "choice": [
@@ -185,6 +185,11 @@
                 "type": "spoken",
                 "text": "What is agency?",
                 "nextScene": "whatIsAg"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -219,6 +224,11 @@
                 "type": "spoken",
                 "text": "What is agency?",
                 "nextScene": "whatIsAg"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -271,6 +281,11 @@
                 "type": "spoken",
                 "text": "What is agency?",
                 "nextScene": "whatIsAg"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -323,6 +338,11 @@
                 "type": "spoken",
                 "text": "What is autonomy?",
                 "nextScene": "whatIsAuto"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -330,17 +350,340 @@
         "visited": false,
         "dialogue": [
             {
-                "charID": "",
-                "type": "",
-                "charName": "",
-                "text": ""
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some important psychological capacities discussed as part of moral standing are consciousness, self-awareness, sentience, emotions, and desires. Which would you like to discuss?"
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is consciousness?",
+                "nextScene": "whatIsCon"
+            },
+            {
+                "type": "spoken",
+                "text": "What is self-awareness?",
+                "nextScene": "whatIsAwa"
+            },
+            {
+                "type": "spoken",
+                "text": "What is sentience?",
+                "nextScene": "whatIsSen"
+            },
+            {
+                "type": "spoken",
+                "text": "What are emotions?",
+                "nextScene": "whatIsEmo"
+            },
+            {
+                "type": "spoken",
+                "text": "What are desires?",
+                "nextScene": "whatIsDes"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
+            }
+        ]
+    },
+    "whatIsCon": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Defined as experience, such as seeing colors or hearing music."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "This can be broader than sentience, potentially including non-valenced experiences (experiences that don't feel good or bad)."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some argue consciousness alone is sufficient for moral standing, while others suggest it is sufficient only with other states like preferences or goals."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "The capacity for consciousness in AIs is debated, and proving its presence is challenging."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another psychological capacity?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is self-awareness?",
+                "nextScene": "whatIsAwa"
+            },
+            {
+                "type": "spoken",
+                "text": "What is sentience?",
+                "nextScene": "whatIsSen"
+            },
+            {
+                "type": "spoken",
+                "text": "What are emotions?",
+                "nextScene": "whatIsEmo"
+            },
+            {
+                "type": "spoken",
+                "text": "What are desires?",
+                "nextScene": "whatIsDes"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
+            }
+        ]
+    },
+    "whatIsAwa": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Self-awareness is a potential criterion for moral personhood."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "It is related to consciousness, particularly self-consciousness, which some suggest is essential for having ends and experiencing one's life as good."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another psychological capacity?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is consciousness?",
+                "nextScene": "whatIsCon"
+            },
+            {
+                "type": "spoken",
+                "text": "What is sentience?",
+                "nextScene": "whatIsSen"
+            },
+            {
+                "type": "spoken",
+                "text": "What are emotions?",
+                "nextScene": "whatIsEmo"
+            },
+            {
+                "type": "spoken",
+                "text": "What are desires?",
+                "nextScene": "whatIsDes"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
+            }
+        ]
+    },
+    "whatIsSen": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Sentience is defined as the capacity for positive or negative experiences, such as feelings, physical sensations, emotional states, and moods, including pleasure and pain."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Sentience is widely considered a sufficient criterion for moral standing."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "The intuitive appeal is that sentient entities have an interest in avoiding pain, which seems intrinsically important."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some sources debate whether sentience is also a necessary condition for moral standing."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "There are significant challenges in establishing whether an AI is truly sentient."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another psychological capacity?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is consciousness?",
+                "nextScene": "whatIsCon"
+            },
+            {
+                "type": "spoken",
+                "text": "What is self-awareness?",
+                "nextScene": "whatIsAwa"
+            },
+            {
+                "type": "spoken",
+                "text": "What are emotions?",
+                "nextScene": "whatIsEmo"
+            },
+            {
+                "type": "spoken",
+                "text": "What are desires?",
+                "nextScene": "whatIsDes"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
+            }
+        ]
+    },
+    "whatIsEmo": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "While part of sentience, the capacity for feelings or emotions is sometimes discussed separately as a potential prerequisite for personhood."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "However, its necessity is debated."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another psychological capacity?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is consciousness?",
+                "nextScene": "whatIsCon"
+            },
+            {
+                "type": "spoken",
+                "text": "What is self-awareness?",
+                "nextScene": "whatIsAwa"
+            },
+            {
+                "type": "spoken",
+                "text": "What is sentience?",
+                "nextScene": "whatIsSen"
+            },
+            {
+                "type": "spoken",
+                "text": "What are desires?",
+                "nextScene": "whatIsDes"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
+            }
+        ]
+    },
+    "whatIsDes": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Having these states is frequently discussed."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some propose a meta-criterion that an entity should qualify for moral standing if it has interests that &ldquo;matter to&rdquo; it."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "This suggests that entities with preferences and goals, even if non-sentient or non-conscious, might qualify if these states truly matter from their perspective."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some argue that intelligent, autonomous non-sentient AIs can be harmed by thwarting their desires, giving them a claim to moral standing."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "The concept of objective and subjective interests is also mentioned as potentially necessary for constitutional rights."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another psychological capacity?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is consciousness?",
+                "nextScene": "whatIsCon"
+            },
+            {
+                "type": "spoken",
+                "text": "What is self-awareness?",
+                "nextScene": "whatIsAwa"
+            },
+            {
+                "type": "spoken",
+                "text": "What is sentience?",
+                "nextScene": "whatIsSen"
+            },
+            {
+                "type": "spoken",
+                "text": "What are emotions?",
+                "nextScene": "whatIsEmo"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -348,17 +691,17 @@
         "visited": false,
         "dialogue": [
             {
-                "charID": "",
-                "type": "",
-                "charName": "",
-                "text": ""
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some important philosophical concepts discussed as part of moral standing are consciousness, self-awareness, sentience, emotions, and desires. Which would you like to discuss?"
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is consciousness?",
+                "nextScene": "whatIsCon"
             }
         ]
     },
@@ -382,6 +725,42 @@
                 "type": "spoken",
                 "charName": "aida",
                 "text": "Legal personhood might also be granted for instrumental reasons, as with corporations."
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "DiscussIMF": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "DiscussMS": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
             }
         ],
         "choice": [
