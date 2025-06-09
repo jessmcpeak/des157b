@@ -2,9 +2,10 @@
     `use strict`;
     // console.log(`running js`);
 
-    let scenePointer = `usabilityTestIntro`;
+    let scenePointer = `introduction`;
     let lineCounter = 0;
     let dialogueData;
+    let pointerTracker = [];
 
     async function getData() {
         const response = await fetch(`data/dialogue_data.json`);
@@ -15,6 +16,12 @@
     getData();
 
     function playScene() {
+        // update pointerTracker
+        if (scenePointer != pointerTracker[pointerTracker.length - 1]) {
+            pointerTracker.push(scenePointer);
+            console.log(pointerTracker);
+        }
+
         // change button to continue after start
         document.querySelector(`button`).innerText = `continue →`;
         document.querySelector(`img`).classList.remove(`invisible`);
@@ -41,7 +48,7 @@
                 addDialogue(line);
 
                 // end scene
-                if (scenePointer === `usabilityTestOutro`) {
+                if (scenePointer === `conclusion`) {
                     document.querySelector(`button`).removeEventListener(`click`, playScene);
                     document.querySelector(`button`).addEventListener(`click`, function() {
                         window.location.reload();

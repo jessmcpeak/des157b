@@ -30,7 +30,7 @@ body {
 #dialogue-box {
     overflow-y: scroll;
     margin: 0 5vw 0 auto;
-    padding: 12.5vh 2em 25vh 2em;
+    padding: 12.5vh 2em 25vh 3em;
     width: 30vw;
     height: 100vh;
     border-right: 1px solid #FFFFFF;
@@ -60,8 +60,16 @@ p, button {
     cursor: default;
 }
 
+p {
+    text-indent: -1em;
+}
+
 li {
     margin: 0;
+}
+
+ol {
+        padding-left: 1em;
 }
 
 .select-active {

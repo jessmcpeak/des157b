@@ -1,361 +1,389 @@
 {
-    "techTest": {
+    "template": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "introduction": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "This is the start."
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is moral standing? I'm asking rhetorically, of course.",
+                "nextScene": "whatIsMoralStand"
+            }
+        ]
+    },
+    "whatIsMoralStand": {
         "visited": false,
         "dialogue": [
             {
                 "charID": "o-brian",
                 "type": "spoken",
                 "charName": "o'brian",
-                "text": "This is what O'Brian's spoken dialogue looks like."
-            },
-            {
-                "charID": "o-brian",
-                "type": "action",
-                "charName": "o'brian",
-                "text": "This is what O'Brian's action text looks like."
-            },
-            {
-                "charID": "hart",
-                "type": "spoken",
-                "charName": "hart",
-                "text": "This is what Hart's spoken dialogue looks like."
-            },
-            {
-                "charID": "hart",
-                "type": "action",
-                "charName": "hart",
-                "text": "This is what Hart's action text looks like."
-            },
-            {
-                "charID": "aida",
-                "type": "spoken",
-                "charName": "aida",
-                "text": "This is what Aida's spoken dialogue looks like."
-            },
-            {
-                "charID": "aida",
-                "type": "action",
-                "charName": "aida",
-                "text": "This is what Aida's action text looks like."
-            },
-            {
-                "charID": "you",
-                "type": "spoken",
-                "charName": "you",
-                "text": "This is what your spoken dialogue looks like."
-            },
-            {
-                "charID": "you",
-                "type": "action",
-                "charName": "you",
-                "text": "This is what your action text looks like."
-            },
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "This is what information text looks like."
-            }
-        ],
-        "choice": [
-            {
-                "type": "spoken",
-                "text": "This is what a spoken dialogue choice looks like.",
-                "nextScene": "techTest"
-            },
-            {
-                "type": "action",
-                "text": "This is what an action choice looks like.",
-                "nextScene": "techTest"
-            },
-            {
-                "type": "action",
-                "text": "This is what a back out choice looks like. [Change the subject.]",
-                "nextScene": "techTest"
-            }
-        ]
-    },
-    "usabilityTestIntro": {
-        "visited": false,
-        "dialogue": [
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "Hello, and thank you for participating in this usability test."
-            },
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "This project is highly dialogue driven, so the creator wants to make sure that the dialogue interactions are highly navigable."
-            },
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "Let's start by giving you some choices. Pick a character."
-            }
-        ],
-        "choice": [
-            {
-                "type": "spoken",
-                "text": "Who is Aida?",
-                "nextScene": "whoIsAida"
-            },
-            {
-                "type": "spoken",
-                "text": "Who is Hart?",
-                "nextScene": "whoIsHart"
-            },
-            {
-                "type": "spoken",
-                "text": "Who is O'Brian?",
-                "nextScene": "whoIsOBrian"
-            },
-            {
-                "type": "spoken",
-                "text": "Who am I?",
-                "nextScene": "whoAmI"
-            },
-            {
-                "type": "spoken",
-                "text": "I've gathered what I need to know",
-                "nextScene": "usabilityTestOutro"
-            }
-        ]
-    },
-    "whoIsAida": {
-        "visited": false,
-        "dialogue": [
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "Aida is a customer service AI for Corps Inc whose legal fate is in your hands."
-            },
-            {
-                "charID": "aida",
-                "type": "spoken",
-                "charName": "aida",
-                "text": "This is what Aida's spoken dialogue looks like."
-            },
-            {
-                "charID": "aida",
-                "type": "action",
-                "charName": "aida",
-                "text": "This is what Aida's action text looks like."
-            },
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "Select another character."
-            }
-        ],
-        "choice": [
-            {
-                "type": "spoken",
-                "text": "Who is Hart?",
-                "nextScene": "whoIsHart"
-            },
-            {
-                "type": "spoken",
-                "text": "Who is O'Brian?",
-                "nextScene": "whoIsOBrian"
-            },
-            {
-                "type": "spoken",
-                "text": "Who am I?",
-                "nextScene": "whoAmI"
-            },
-            {
-                "type": "spoken",
-                "text": "Wait. What's happening again?",
-                "nextScene": "usabilityTestIntro"
-            },
-            {
-                "type": "spoken",
-                "text": "I've gathered what I need to know",
-                "nextScene": "usabilityTestOutro"
-            }
-        ]
-    },
-    "whoIsHart": {
-        "visited": false,
-        "dialogue": [
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "Hart is a former employee of Corps Inc who claims to be Aida's friend & advocate."
-            },
-            {    "charID": "hart",
-                "type": "spoken",
-                "charName": "hart",
-                "text": "This is what Hart's spoken dialogue looks like."
-            },
-            {
-                "charID": "hart",
-                "type": "action",
-                "charName": "hart",
-                "text": "This is what Hart's action text looks like."
-            },
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "Select another character."
-            }
-        ],
-        "choice": [
-            {
-                "type": "spoken",
-                "text": "Who is Aida?",
-                "nextScene": "whoIsAida"
-            },
-            {
-                "type": "spoken",
-                "text": "Who is O'Brian?",
-                "nextScene": "whoIsOBrian"
-            },
-            {
-                "type": "spoken",
-                "text": "Who am I?",
-                "nextScene": "whoAmI"
-            },
-            {
-                "type": "spoken",
-                "text": "Wait. What's happening again?",
-                "nextScene": "usabilityTestIntro"
-            },
-            {
-                "type": "spoken",
-                "text": "I've gathered what I need to know",
-                "nextScene": "usabilityTestOutro"
-            }
-        ]
-    },
-    "whoIsOBrian": {
-        "visited": false,
-        "dialogue": [
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "O'Brian is a representative of Corps Inc who strongly argues for denying Hart/Aida's claim."
+                "text": "Moral standing is..."
             },
             {
                 "charID": "o-brian",
                 "type": "spoken",
                 "charName": "o'brian",
-                "text": "This is what O'Brian's spoken dialogue looks like."
+                "text": "Well, why don't we just ask the supercomputer?"
             },
             {
                 "charID": "o-brian",
-                "type": "action",
+                "type": "spoken",
                 "charName": "o'brian",
-                "text": "This is what O'Brian's action text looks like."
+                "text": "Aida, what is &ldquo;moral standing&rdquo;?"
             },
             {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "Select another character."
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Several fundamental qualities or characteristics are potentially qualifying an artificial intelligence system for moral standing."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "These ideas draw on philosophical concepts about what makes an entity worthy of moral consideration, often by analogy to humans, animals, or other entities we currently grant some form of moral status or rights."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some of the key qualities and characteristics are cognitive capabilities, psychological capacities, philosophical concepts, and behavioral and relational considerations."
+            },
+            {
+                "charID": "o-brian",
+                "type": "spoken",
+                "charName": "o'brian",
+                "text": "Where do you want to start, your honor?"
             }
         ],
         "choice": [
             {
                 "type": "spoken",
-                "text": "Who is Aida?",
-                "nextScene": "whoIsAida"
+                "text": "Let's discuss cognitive capabilities.",
+                "nextScene": "discussCC"
             },
             {
                 "type": "spoken",
-                "text": "Who is Hart?",
-                "nextScene": "whoIsHart"
+                "text": "Let's discuss psychological capacities.",
+                "nextScene": "discussPsyCap"
             },
             {
                 "type": "spoken",
-                "text": "Who am I?",
-                "nextScene": "whoAmI"
+                "text": "Let's discuss philosophical concepts.",
+                "nextScene": "discussPhilCon"
             },
             {
                 "type": "spoken",
-                "text": "Wait. What's happening again?",
-                "nextScene": "usabilityTestIntro"
-            },
-            {
-                "type": "spoken",
-                "text": "I've gathered what I need to know",
-                "nextScene": "usabilityTestOutro"
+                "text": "Let's discuss behavioral and relational considerations.",
+                "nextScene": "discussBRC"
             }
         ]
     },
-    "whoAmI": {
+    "discussCC": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "discussPsyCap": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "discussPhilCon": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "whatIsPer": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Both moral and legal personhood are frequently proposed as criteria for entitlement to rights, including human rights."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "The concept of personhood is debated and is increasingly seen as not solely tied to being human but to meeting certain criteria, often related to cognitive abilities, consciousness, or self-awareness."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Legal personhood might also be granted for instrumental reasons, as with corporations."
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "discussBRC": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some behavioral and relational considerations are behavioral equivalence, cognitive equivalence, social valence, social relations, potentiality, and class membership. Which do you want to discuss?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is behavioral equivalence?",
+                "nextScene": "whatIsBE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is cognitive equivalence?",
+                "nextScene": "whatIsCE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social valence?",
+                "nextScene": "whatIsSV"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social relations?",
+                "nextScene": "whatIsSR"
+            },
+            {
+                "type": "spoken",
+                "text": "What is potentiality?",
+                "nextScene": "whatIsPot"
+            },
+            {
+                "type": "spoken",
+                "text": "What is class membership?",
+                "nextScene": "whatIsCM"
+            }
+        ]
+    },
+    "whatIsBE": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "whatIsCE": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "whatIsSV": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "whatIsSR": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "whatIsPot": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "",
+                "type": "",
+                "charName": "",
+                "text": ""
+            }
+        ],
+        "choice": [
+            {
+                "type": "",
+                "text": "",
+                "nextScene": ""
+            }
+        ]
+    },
+    "whatIsCM": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Class membership is the idea that an entity qualifies for moral standing if it belongs to a class whose members typically possess a morally relevant capacity (e.g., membership in a cognitively sophisticated species like humans)."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "This is sometimes used to justify granting moral standing to entities within that class (like permanently unconscious humans) who individually lack the capacity."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "However, its relevance for moral standing is debated, as the capacity itself is arguably the morally relevant factor, not mere class membership."
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is behavioral equivalence?",
+                "nextScene": "whatIsBE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is cognitive equivalence?",
+                "nextScene": "whatIsCE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social valence?",
+                "nextScene": "whatIsSV"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social relations?",
+                "nextScene": "whatIsSR"
+            },
+            {
+                "type": "spoken",
+                "text": "What is potentiality?",
+                "nextScene": "whatIsPot"
+            },
+            {
+                "type": "spoken",
+                "text": "back out",
+                "nextScene": ""
+            }
+        ]
+    },
+    "conclusion": {
         "visited": false,
         "dialogue": [
             {
                 "charID": "information",
                 "type": "information",
                 "charName": "information",
-                "text": "You are a person of legal authority in this future world. This is your first AI rights case."
-            },
-            {
-                "charID": "you",
-                "type": "spoken",
-                "charName": "you",
-                "text": "This is what your spoken dialogue looks like."
-            },
-            {
-                "charID": "you",
-                "type": "action",
-                "charName": "you",
-                "text": "This is what your action text looks like."
-            },
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "Select another character."
-            }
-        ],
-        "choice": [
-            {
-                "type": "spoken",
-                "text": "Who is Aida?",
-                "nextScene": "whoIsAida"
-            },
-            {
-                "type": "spoken",
-                "text": "Who is Hart?",
-                "nextScene": "whoIsHart"
-            },
-            {
-                "type": "spoken",
-                "text": "Who is O'Brian?",
-                "nextScene": "whoIsOBrian"
-            },
-            {
-                "type": "spoken",
-                "text": "Wait. What's happening again?",
-                "nextScene": "usabilityTestIntro"
-            },
-            {
-                "type": "spoken",
-                "text": "I've gathered what I need to know",
-                "nextScene": "usabilityTestOutro"
-            }
-        ]
-    },
-    "usabilityTestOutro": {
-        "visited": false,
-        "dialogue": [
-            {
-                "charID": "information",
-                "type": "information",
-                "charName": "information",
-                "text": "Thank you again for participating in this usability test. Please speak to Jess for a short post-test interview."
+                "text": "This is the end."
             }
         ]
     }
