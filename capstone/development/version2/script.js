@@ -10,11 +10,14 @@
         const response = await fetch(`data/dialogue_data.json`);
         const result = await response.json();
         dialogueData = result;
-        playScene();
+        document.querySelector(`button`).addEventListener(`click`, playScene);
     }
     getData();
 
     function playScene() {
+        // change button to continue after start
+        document.querySelector(`button`).innerText = `continue →`;
+
         // disable old dialogue choices
         const oldLists = document.querySelectorAll(`ol li`);
         for (item of oldLists) {
@@ -29,14 +32,25 @@
             let line = dialogueData[scenePointer].dialogue[lineCounter];
             if (lineCounter < dialogueData[scenePointer].dialogue.length - 1) {
                 addDialogue(line);
-                document.querySelector(`button`).classList.remove(`hidden`);
                 lineCounter++;
                 document.querySelector(`button`).addEventListener(`click`, playScene);
             }
             // if the dialogue is finished, present the choices
             else if (lineCounter >= dialogueData[scenePointer].dialogue.length - 1) {
                 addDialogue(line);
-                addChoices();
+
+                // end scene
+                if (scenePointer === `usabilityTestOutro`) {
+                    document.querySelector(`button`).removeEventListener(`click`, playScene);
+                    document.querySelector(`button`).addEventListener(`click`, function() {
+                        window.location.reload();
+                    });
+                    document.querySelector(`button`).innerText = `restart →`;
+                }
+                // all other scenes
+                else {
+                    addChoices();
+                }
             }
             document.querySelector(`#dialogue-box`).scrollTo(0, document.querySelector(`#dialogue-box`).scrollHeight);
         }

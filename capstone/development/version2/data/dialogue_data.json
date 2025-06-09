@@ -357,13 +357,6 @@
                 "charName": "information",
                 "text": "Thank you again for participating in this usability test. Please speak to Jess for a short post-test interview."
             }
-        ],
-        "choice": [
-            {
-                "type": "spoken",
-                "text": "Wait, no! I was having so much fun!",
-                "nextScene": "usabilityTestIntro"
-            }
         ]
     }
 }
