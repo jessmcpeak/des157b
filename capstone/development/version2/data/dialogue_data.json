@@ -1,0 +1,369 @@
+{
+    "techTest": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "o-brian",
+                "type": "spoken",
+                "charName": "o'brian",
+                "text": "This is what O'Brian's spoken dialogue looks like."
+            },
+            {
+                "charID": "o-brian",
+                "type": "action",
+                "charName": "o'brian",
+                "text": "This is what O'Brian's action text looks like."
+            },
+            {
+                "charID": "hart",
+                "type": "spoken",
+                "charName": "hart",
+                "text": "This is what Hart's spoken dialogue looks like."
+            },
+            {
+                "charID": "hart",
+                "type": "action",
+                "charName": "hart",
+                "text": "This is what Hart's action text looks like."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "This is what Aida's spoken dialogue looks like."
+            },
+            {
+                "charID": "aida",
+                "type": "action",
+                "charName": "aida",
+                "text": "This is what Aida's action text looks like."
+            },
+            {
+                "charID": "you",
+                "type": "spoken",
+                "charName": "you",
+                "text": "This is what your spoken dialogue looks like."
+            },
+            {
+                "charID": "you",
+                "type": "action",
+                "charName": "you",
+                "text": "This is what your action text looks like."
+            },
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "This is what information text looks like."
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "This is what a spoken dialogue choice looks like.",
+                "nextScene": "techTest"
+            },
+            {
+                "type": "action",
+                "text": "This is what an action choice looks like.",
+                "nextScene": "techTest"
+            },
+            {
+                "type": "action",
+                "text": "This is what a back out choice looks like. [Change the subject.]",
+                "nextScene": "techTest"
+            }
+        ]
+    },
+    "usabilityTestIntro": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "Hello, and thank you for participating in this usability test."
+            },
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "This project is highly dialogue driven, so the creator wants to make sure that the dialogue interactions are highly navigable."
+            },
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "Let's start by giving you some choices. Pick a character."
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "Who is Aida?",
+                "nextScene": "whoIsAida"
+            },
+            {
+                "type": "spoken",
+                "text": "Who is Hart?",
+                "nextScene": "whoIsHart"
+            },
+            {
+                "type": "spoken",
+                "text": "Who is O'Brian?",
+                "nextScene": "whoIsOBrian"
+            },
+            {
+                "type": "spoken",
+                "text": "Who am I?",
+                "nextScene": "whoAmI"
+            },
+            {
+                "type": "spoken",
+                "text": "I've gathered what I need to know",
+                "nextScene": "usabilityTestOutro"
+            }
+        ]
+    },
+    "whoIsAida": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "Aida is a customer service AI for Corps Inc whose legal fate is in your hands."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "This is what Aida's spoken dialogue looks like."
+            },
+            {
+                "charID": "aida",
+                "type": "action",
+                "charName": "aida",
+                "text": "This is what Aida's action text looks like."
+            },
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "Select another character."
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "Who is Hart?",
+                "nextScene": "whoIsHart"
+            },
+            {
+                "type": "spoken",
+                "text": "Who is O'Brian?",
+                "nextScene": "whoIsOBrian"
+            },
+            {
+                "type": "spoken",
+                "text": "Who am I?",
+                "nextScene": "whoAmI"
+            },
+            {
+                "type": "spoken",
+                "text": "Wait. What's happening again?",
+                "nextScene": "usabilityTestIntro"
+            },
+            {
+                "type": "spoken",
+                "text": "I've gathered what I need to know",
+                "nextScene": "usabilityTestOutro"
+            }
+        ]
+    },
+    "whoIsHart": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "Hart is a former employee of Corps Inc who claims to be Aida's friend & advocate."
+            },
+            {    "charID": "hart",
+                "type": "spoken",
+                "charName": "hart",
+                "text": "This is what Hart's spoken dialogue looks like."
+            },
+            {
+                "charID": "hart",
+                "type": "action",
+                "charName": "hart",
+                "text": "This is what Hart's action text looks like."
+            },
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "Select another character."
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "Who is Aida?",
+                "nextScene": "whoIsAida"
+            },
+            {
+                "type": "spoken",
+                "text": "Who is O'Brian?",
+                "nextScene": "whoIsOBrian"
+            },
+            {
+                "type": "spoken",
+                "text": "Who am I?",
+                "nextScene": "whoAmI"
+            },
+            {
+                "type": "spoken",
+                "text": "Wait. What's happening again?",
+                "nextScene": "usabilityTestIntro"
+            },
+            {
+                "type": "spoken",
+                "text": "I've gathered what I need to know",
+                "nextScene": "usabilityTestOutro"
+            }
+        ]
+    },
+    "whoIsOBrian": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "O'Brian is a representative of Corps Inc who strongly argues for denying Hart/Aida's claim."
+            },
+            {
+                "charID": "o-brian",
+                "type": "spoken",
+                "charName": "o'brian",
+                "text": "This is what O'Brian's spoken dialogue looks like."
+            },
+            {
+                "charID": "o-brian",
+                "type": "action",
+                "charName": "o'brian",
+                "text": "This is what O'Brian's action text looks like."
+            },
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "Select another character."
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "Who is Aida?",
+                "nextScene": "whoIsAida"
+            },
+            {
+                "type": "spoken",
+                "text": "Who is Hart?",
+                "nextScene": "whoIsHart"
+            },
+            {
+                "type": "spoken",
+                "text": "Who am I?",
+                "nextScene": "whoAmI"
+            },
+            {
+                "type": "spoken",
+                "text": "Wait. What's happening again?",
+                "nextScene": "usabilityTestIntro"
+            },
+            {
+                "type": "spoken",
+                "text": "I've gathered what I need to know",
+                "nextScene": "usabilityTestOutro"
+            }
+        ]
+    },
+    "whoAmI": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "You are a person of legal authority in this future world. This is your first AI rights case."
+            },
+            {
+                "charID": "you",
+                "type": "spoken",
+                "charName": "you",
+                "text": "This is what your spoken dialogue looks like."
+            },
+            {
+                "charID": "you",
+                "type": "action",
+                "charName": "you",
+                "text": "This is what your action text looks like."
+            },
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "Select another character."
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "Who is Aida?",
+                "nextScene": "whoIsAida"
+            },
+            {
+                "type": "spoken",
+                "text": "Who is Hart?",
+                "nextScene": "whoIsHart"
+            },
+            {
+                "type": "spoken",
+                "text": "Who is O'Brian?",
+                "nextScene": "whoIsOBrian"
+            },
+            {
+                "type": "spoken",
+                "text": "Wait. What's happening again?",
+                "nextScene": "usabilityTestIntro"
+            },
+            {
+                "type": "spoken",
+                "text": "I've gathered what I need to know",
+                "nextScene": "usabilityTestOutro"
+            }
+        ]
+    },
+    "usabilityTestOutro": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "Thank you again for participating in this usability test. Please speak to Jess for a short post-test interview."
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "Wait, no! I was having so much fun!",
+                "nextScene": "usabilityTestIntro"
+            }
+        ]
+    }
+}

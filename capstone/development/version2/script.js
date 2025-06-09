@@ -1,0 +1,126 @@
+(function() {
+    `use strict`;
+    // console.log(`running js`);
+
+    let scenePointer = `usabilityTestIntro`;
+    let lineCounter = 0;
+    let dialogueData;
+
+    async function getData() {
+        const response = await fetch(`data/dialogue_data.json`);
+        const result = await response.json();
+        dialogueData = result;
+        playScene();
+    }
+    getData();
+
+    function playScene() {
+        // disable old dialogue choices
+        const oldLists = document.querySelectorAll(`ol li`);
+        for (item of oldLists) {
+            item.removeEventListener(`click`, choiceFunc);
+            item.classList.remove(`select-active`);
+            item.classList.add(`select-inactive`);
+        }
+
+        // if this scene is new, play dialogue line by line
+        if (dialogueData[scenePointer].visited === false) {
+            // if there's dialogue, play the dialogue line by line
+            if (lineCounter < dialogueData[scenePointer].dialogue.length) {
+                let line = dialogueData[scenePointer].dialogue[lineCounter];
+                addDialogue(line);
+                document.querySelector(`button`).classList.remove(`hidden`);
+                lineCounter++;
+                document.querySelector(`button`).addEventListener(`click`, playScene);
+            }
+            // if the dialogue is finished, present the choices
+            else if (lineCounter >= dialogueData[scenePointer].dialogue.length) {
+                addChoices();
+            }
+        }
+        // if the scene has been visited before, play the whole scene at once, skipping to the choice
+        else if (dialogueData[scenePointer].visited === true) {
+            // play the whole dialogue
+            for (line of dialogueData[scenePointer].dialogue) {
+                addDialogue(line);
+            }
+            // present the choices
+            addChoices();
+        }
+
+        document.querySelector(`#dialogue-box`).scrollTo(0, document.querySelector(`#dialogue-box`).scrollHeight);
+    }
+
+    function addDialogue(line) {
+        let newLine = document.createElement(`p`);
+        newLine.setAttribute(`class`, `${line.charID} ${line.type}`);
+        let string = ``;
+        if (line.type === `spoken`) {
+            string = `<span class="name">${line.charName}</span>
+                        <span class="spacer"> — </span>
+                        <span>&ldquo;</span><span class="text">${line.text}</span><span>&rdquo;</span>`;
+        }
+        else {
+            string = `<span class="name">${line.charName}</span>
+                        <span class="spacer"> — </span>
+                        <span class="text">${line.text}</span>`;
+        }
+        newLine.innerHTML = string;
+        document.querySelector(`#dialogue-box`).insertBefore(newLine, document.querySelector(`button`));
+    }
+
+    function addChoices() {
+        dialogueData[scenePointer].visited = true;
+
+        // disable continue button
+        document.querySelector(`button`).setAttribute(`class`, `inactive`);
+        document.querySelector(`button`).removeEventListener(`click`, playScene);
+
+        // create list and add to DOM
+        let list = document.createElement(`ol`);
+        document.querySelector(`#dialogue-box`).insertBefore(list, document.querySelector(`button`));
+
+        // populate list
+        for (let option of dialogueData[scenePointer].choice) {
+            let listItem = document.createElement(`li`);
+            listItem.setAttribute(`class`, `${option.type} unselected select-active`);
+            listItem.setAttribute(`scene-pointer`, `${option.nextScene}`);
+            let string = ``;
+
+            if (option.type === `spoken`) {
+                string = `<span class="spacer"> — </span>
+                    <span>&ldquo;</span><span class="text">${option.text}</span><span>&rdquo;</span>`;
+            } else {
+                    string = `<span class="spacer"> — </span>
+                    <span class="text">${option.text}</span>`;
+            }
+
+            listItem.innerHTML = string;
+            list.appendChild(listItem);
+
+            // make choice functional
+            document.querySelector(`ol:last-of-type li:last-of-type`).addEventListener(`click`, choiceFunc);
+        }
+    }
+
+    const choiceFunc = function(event) {
+        // grey out all choices
+        const theseChoices = document.querySelectorAll(`ol:last-of-type li`);
+        for (let choice of theseChoices) {
+            choice.classList.remove(`selected`);
+            choice.classList.add(`unselected`);
+        }
+
+        // make selected white
+        event.currentTarget.classList.remove(`unselected`);
+        event.currentTarget.classList.add(`selected`);
+
+        // prep new scene
+        scenePointer = event.currentTarget.getAttribute(`scene-pointer`);
+        lineCounter = 0;
+
+        // activate continue
+        document.querySelector(`button`).setAttribute(`class`, `active`);
+        document.querySelector(`button`).addEventListener(`click`, playScene);
+    }
+})();
