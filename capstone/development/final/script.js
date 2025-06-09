@@ -21,7 +21,7 @@
             dialogueData.whatIsMoralStand.choice.push({
                 "type": "spoken",
                 "text": "I'm ready to make my decision.",
-                "nextScene": "conclusion"
+                "nextScene": "ruling"
             });
         }
 

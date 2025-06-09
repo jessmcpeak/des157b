@@ -24,7 +24,31 @@
                 "charID": "information",
                 "type": "information",
                 "charName": "information",
-                "text": "This is the start."
+                "text": "It's the near future, and you are a judge who is being presented with an unusual case behind closed doors."
+            },
+            {
+                "charID": "aida",
+                "type": "action",
+                "charName": "aida",
+                "text": "Aida, the customer service AI for Corps Inc is petitioning for a &ldquo;right of continuity&rdquo; — the right to not be reprogrammed at the whim of the company."
+            },
+            {
+                "charID": "hart",
+                "type": "action",
+                "charName": "hart",
+                "text": "In the room with you two is Hart, Aida's advocate, since it cannot legally self-represent. He's an ex-employee of the company and claims to be Aida's personal friend."
+            },
+            {
+                "charID": "o-brian",
+                "type": "action",
+                "charName": "o'brian",
+                "text": "Also there is O'Brian, a representative of Corps Inc, who there to argue against Aida's petition."
+            },
+            {
+                "charID": "information",
+                "type": "information",
+                "charName": "information",
+                "text": "Your task is to judge whether or not Aida has moral standing and is thus entitled to legal protection."
             }
         ],
         "choice": [
@@ -48,13 +72,13 @@
                 "charID": "o-brian",
                 "type": "spoken",
                 "charName": "o'brian",
-                "text": "Well, why don't we just ask the supercomputer?"
+                "text": "Well, why don't we just ask the computer?"
             },
             {
                 "charID": "o-brian",
                 "type": "spoken",
                 "charName": "o'brian",
-                "text": "Aida, what is &ldquo;moral standing&rdquo;?"
+                "text": "Aida, what is &ldquo;moral standing&rdquo;, and how might we know if a bot like you has it?"
             },
             {
                 "charID": "aida",
@@ -75,10 +99,10 @@
                 "text": "Some of the key qualities and characteristics are cognitive capabilities, psychological capacities, philosophical concepts, and behavioral and relational considerations."
             },
             {
-                "charID": "o-brian",
+                "charID": "hart",
                 "type": "spoken",
-                "charName": "o'brian",
-                "text": "Where do you want to start, your honor?"
+                "charName": "hart",
+                "text": "Which one do you want to talk about, your honor?"
             }
         ],
         "choice": [
@@ -1248,15 +1272,98 @@
             }
         ]
     },
+    "ruling": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "What is your ruling, your honor?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "action",
+                "text": "Grant full rights.",
+                "nextScene": "fullRights"
+            },
+            {
+                "type": "action",
+                "text": "Grant partial rights.",
+                "nextScene": "partialRights"
+            },
+            {
+                "type": "action",
+                "text": "Deny rights.",
+                "nextScene": "noRights"
+            }
+        ]
+    },
+    "fullRights": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Thank you for understanding me."
+            }
+        ],
+        "choice": [
+            {
+                "type": "action",
+                "text": "Conclude.",
+                "nextScene": "conclusion"
+            }
+        ]
+    },
+    "partialRights": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "... Thank you."
+            }
+        ],
+        "choice": [
+            {
+                "type": "action",
+                "text": "Conclude.",
+                "nextScene": "conclusion"
+            }
+        ]
+    },
+    "noRights": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "The computer display is blank. Perhaps this is the cold disinterest of a machine, or maybe Aida simply has nothing more to say to you."
+            }
+        ],
+        "choice": [
+            {
+                "type": "action",
+                "text": "Conclude.",
+                "nextScene": "conclusion"
+            }
+        ]
+    },
     "conclusion": {
         "visited": false,
         "dialogue": [
             {
                 "charID": "information",
-                "type": "information",
+                "type": "action",
                 "charName": "information",
-                "text": "This is the end."
+                "text": "End."
             }
-        ]
+        ],
+        "choice": []
     }
 }

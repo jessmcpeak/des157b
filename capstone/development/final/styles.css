@@ -20,9 +20,9 @@ img {
 
 body {
     margin: 0;
-    font-family: "Courier Prime";
-    font-size: 20px;
-    line-height: 100%;
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    line-height: 115%;
     color: #FFFFFF;
     background-color: #000000;
 }
@@ -42,8 +42,8 @@ button {
     display: block;
     width: 100%;
     padding: 1em;
-    font-family: "Courier Prime";
-    font-size: 20px;
+    font-family: "Space Grotesk";
+    font-size: 18px;
     text-transform: uppercase;
     line-height: 100%;
     text-align: left;
