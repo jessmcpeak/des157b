@@ -17,6 +17,7 @@
     function playScene() {
         // change button to continue after start
         document.querySelector(`button`).innerText = `continue →`;
+        document.querySelector(`img`).classList.remove(`invisible`);
 
         // disable old dialogue choices
         const oldLists = document.querySelectorAll(`ol li`);
