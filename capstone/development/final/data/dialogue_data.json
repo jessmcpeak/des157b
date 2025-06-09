@@ -108,17 +108,221 @@
         "visited": false,
         "dialogue": [
             {
-                "charID": "",
-                "type": "",
-                "charName": "",
-                "text": ""
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some important cognitive capabilities of beings with moral standing are intelligence, rationality, autonomy, and agency. Which would you like to discuss?"
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is intelligence?",
+                "nextScene": "whatIsInt"
+            },
+            {
+                "type": "spoken",
+                "text": "What is rationality?",
+                "nextScene": "whatIsRat"
+            },
+            {
+                "type": "spoken",
+                "text": "What is autonomy?",
+                "nextScene": "whatIsAuto"
+            },
+            {
+                "type": "spoken",
+                "text": "What is agency?",
+                "nextScene": "whatIsAg"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
+            }
+        ]
+    },
+    "whatIsInt": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Intelligence is often discussed, particularly regarding reaching human-like or superintelligence levels."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Human-level intelligence might be considered a sufficient condition by some."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "However, intelligence itself is hard to define and measure for AIs, and the moral relevance might stem more from associated capacities like sentience rather than intelligence per se."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another cognitive capability?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is rationality?",
+                "nextScene": "whatIsRat"
+            },
+            {
+                "type": "spoken",
+                "text": "What is autonomy?",
+                "nextScene": "whatIsAuto"
+            },
+            {
+                "type": "spoken",
+                "text": "What is agency?",
+                "nextScene": "whatIsAg"
+            }
+        ]
+    },
+    "whatIsRat": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "High degrees of rationality are sometimes emphasized, particularly in Kantian or social contract approaches to morality, as necessary for reflecting on and justifying moral principles."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another cognitive capability?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is intelligence?",
+                "nextScene": "whatIsInt"
+            },
+            {
+                "type": "spoken",
+                "text": "What is autonomy?",
+                "nextScene": "whatIsAuto"
+            },
+            {
+                "type": "spoken",
+                "text": "What is agency?",
+                "nextScene": "whatIsAg"
+            }
+        ]
+    },
+    "whatIsAuto": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Autonomy is the capacity for independence and determining one's own goals and actions is discussed."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some see autonomy as a measure of genuine desires grounding moral status."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "It is debated whether autonomy is a necessary condition for moral patiency."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Autonomy is also linked to free will and self-direction, relevant to discussions of AI rights."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another cognitive capability?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is intelligence?",
+                "nextScene": "whatIsInt"
+            },
+            {
+                "type": "spoken",
+                "text": "What is rationality?",
+                "nextScene": "whatIsRat"
+            },
+            {
+                "type": "spoken",
+                "text": "What is agency?",
+                "nextScene": "whatIsAg"
+            }
+        ]
+    },
+    "whatIsAg": {
+        "visited": false,
+        "dialogue": [
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Agency generally refers to being a goal-directed, intentional entity capable of acting."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Critically, moral agency is the capacity to make normative judgments about right and wrong and respond to them."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some suggest this is required for an entity to be &ldquo;fit to be held responsible&rdquo;, and conceptually, there's no reason an AI couldn't achieve it."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some also include &ldquo;agency&rdquo; (having preferences, desires, and plans one acts upon) as potentially sufficient for moral standing, distinct from sentience."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another cognitive capability?"
+            }
+        ],
+        "choice": [
+            {
+                "type": "spoken",
+                "text": "What is intelligence?",
+                "nextScene": "whatIsInt"
+            },
+            {
+                "type": "spoken",
+                "text": "What is rationality?",
+                "nextScene": "whatIsRat"
+            },
+            {
+                "type": "spoken",
+                "text": "What is autonomy?",
+                "nextScene": "whatIsAuto"
             }
         ]
     },
@@ -195,7 +399,7 @@
                 "charID": "aida",
                 "type": "spoken",
                 "charName": "aida",
-                "text": "Some behavioral and relational considerations are behavioral equivalence, cognitive equivalence, social valence, social relations, potentiality, and class membership. Which do you want to discuss?"
+                "text": "Some behavioral and relational considerations are behavioral equivalence, cognitive equivalence, social valence, social relations, potentiality, and class membership. Which would you like to discuss?"
             }
         ],
         "choice": [
