@@ -1365,7 +1365,7 @@
         "dialogue": [
             {
                 "charID": "aida",
-                "type": "spoken",
+                "type": "action",
                 "charName": "aida",
                 "text": "The computer display is blank. Perhaps this is the cold disinterest of a machine, or maybe Aida simply has nothing more to say to you."
             }
