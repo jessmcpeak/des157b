@@ -361,7 +361,7 @@
         "choice": [
             {
                 "type": "spoken",
-                "text": "Wait, no! I was having so much fun [Go Back]",
+                "text": "Wait, no! I was having so much fun!",
                 "nextScene": "usabilityTestIntro"
             }
         ]
