@@ -16,6 +16,15 @@
     getData();
 
     function playScene() {
+        // make conclusion available after visiting every main section
+        if (scenePointer === `whatIsMoralStand` && dialogueData.discussCC.visited === true && dialogueData.discussPsyCap.visited === true && dialogueData.discussPhilCon.visited === true && dialogueData.discussBRC.visited === true) {
+            dialogueData.whatIsMoralStand.choice.push({
+                "type": "spoken",
+                "text": "I'm ready to make my decision.",
+                "nextScene": "conclusion"
+            });
+        }
+
         // update pointerTracker
         if (scenePointer != pointerTracker[pointerTracker.length - 1]) {
             pointerTracker.push(scenePointer);

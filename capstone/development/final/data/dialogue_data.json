@@ -694,14 +694,29 @@
                 "charID": "aida",
                 "type": "spoken",
                 "charName": "aida",
-                "text": "Some important philosophical concepts discussed as part of moral standing are consciousness, self-awareness, sentience, emotions, and desires. Which would you like to discuss?"
+                "text": "Some important philosophical concepts discussed as part of moral standing are personhood, intrinsic moral significance, and moral status. Which would you like to discuss?"
             }
         ],
         "choice": [
             {
                 "type": "spoken",
-                "text": "What is consciousness?",
-                "nextScene": "whatIsCon"
+                "text": "What is personhood?",
+                "nextScene": "whatIsPer"
+            },
+            {
+                "type": "spoken",
+                "text": "What is intrinsic moral significance?",
+                "nextScene": "whatIsIMF"
+            },
+            {
+                "type": "spoken",
+                "text": "What is moral status?",
+                "nextScene": "whatIsMStat"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -725,49 +740,121 @@
                 "type": "spoken",
                 "charName": "aida",
                 "text": "Legal personhood might also be granted for instrumental reasons, as with corporations."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another philosophical concept?"
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is intrinsic moral significance?",
+                "nextScene": "whatIsIMF"
+            },
+            {
+                "type": "spoken",
+                "text": "What is moral status?",
+                "nextScene": "whatIsMStat"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
-    "DiscussIMF": {
+    "whatIsIMF": {
         "visited": false,
         "dialogue": [
             {
-                "charID": "",
-                "type": "",
-                "charName": "",
-                "text": ""
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Intrinsic moral significance refers to an entity mattering for its own sake, independently of its usefulness to others."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Sentience and/or consciousness (or the potential for them) are suggested as necessary conditions for non-derivative rights based on intrinsic significance."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "AIs might gain derivative rights (instrumentally justified) but not necessarily full intrinsic moral significance."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another philosophical concept?"
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is personhood?",
+                "nextScene": "whatIsPer"
+            },
+            {
+                "type": "spoken",
+                "text": "What is moral status?",
+                "nextScene": "whatIsMStat"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
-    "DiscussMS": {
+    "whatIsMStat": {
         "visited": false,
         "dialogue": [
             {
-                "charID": "",
-                "type": "",
-                "charName": "",
-                "text": ""
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Moral status is broad concept meaning an entity matters intrinsically to at least some degree."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "It can come in degrees."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Various properties (sentience, consciousness, cognition, life, information) and relationships are debated as the grounds for moral status."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Would you like to discuss another philosophical concept?"
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is personhood?",
+                "nextScene": "whatIsPer"
+            },
+            {
+                "type": "spoken",
+                "text": "What is intrinsic moral significance?",
+                "nextScene": "whatIsIMF"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -811,6 +898,11 @@
                 "type": "spoken",
                 "text": "What is class membership?",
                 "nextScene": "whatIsCM"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -818,17 +910,59 @@
         "visited": false,
         "dialogue": [
             {
-                "charID": "",
-                "type": "",
-                "charName": "",
-                "text": ""
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Behavioral equivalence is idea that if an entity consistently behaves as if it possesses a capacity that grounds moral standing (like feeling pain), it should be granted that status."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some propose this as a sufficient epistemic basis for granting status."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "A challenge is whether behavior alone is enough, or if the underlying internal state matters."
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is behavioral equivalence?",
+                "nextScene": "whatIsBE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is cognitive equivalence?",
+                "nextScene": "whatIsCE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social valence?",
+                "nextScene": "whatIsSV"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social relations?",
+                "nextScene": "whatIsSR"
+            },
+            {
+                "type": "spoken",
+                "text": "What is potentiality?",
+                "nextScene": "whatIsPot"
+            },
+            {
+                "type": "spoken",
+                "text": "What is class membership?",
+                "nextScene": "whatIsCM"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -836,17 +970,53 @@
         "visited": false,
         "dialogue": [
             {
-                "charID": "",
-                "type": "",
-                "charName": "",
-                "text": ""
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Cognitive equivalence is a strategy where an AI is treated as morally significant to the extent its cognitive structure and dynamics align with psychological capacities found in other beings (like animals) already considered moral patients."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "This approach focuses on comparing the AI's internal mechanisms (memory, desire, agency, motivation, valence) based on scientific understanding."
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is behavioral equivalence?",
+                "nextScene": "whatIsBE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is cognitive equivalence?",
+                "nextScene": "whatIsCE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social valence?",
+                "nextScene": "whatIsSV"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social relations?",
+                "nextScene": "whatIsSR"
+            },
+            {
+                "type": "spoken",
+                "text": "What is potentiality?",
+                "nextScene": "whatIsPot"
+            },
+            {
+                "type": "spoken",
+                "text": "What is class membership?",
+                "nextScene": "whatIsCM"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -854,17 +1024,53 @@
         "visited": false,
         "dialogue": [
             {
-                "charID": "",
-                "type": "",
-                "charName": "",
-                "text": ""
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Social valence refers to the degree to which humans treat robots or AIs as human-like entities."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "While primarily relevant for human reactions and legal protections against AI, it becomes relevant for determining the AI's own moral standing if understood as referring to the AI's capacity for sentience or consciousness (i.e., its ability to feel or be conscious)."
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is behavioral equivalence?",
+                "nextScene": "whatIsBE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is cognitive equivalence?",
+                "nextScene": "whatIsCE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social valence?",
+                "nextScene": "whatIsSV"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social relations?",
+                "nextScene": "whatIsSR"
+            },
+            {
+                "type": "spoken",
+                "text": "What is potentiality?",
+                "nextScene": "whatIsPot"
+            },
+            {
+                "type": "spoken",
+                "text": "What is class membership?",
+                "nextScene": "whatIsCM"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -872,17 +1078,59 @@
         "visited": false,
         "dialogue": [
             {
-                "charID": "",
-                "type": "",
-                "charName": "",
-                "text": ""
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Some argue that moral consideration arises from the nature of social relations between humans and entities, rather than solely from the intrinsic properties of the entity."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "This perspective suggests moral standing emerges dynamically within these relationships."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "A relational approach emphasizes the importance of reciprocity — the entity's capacity to respond to care."
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is behavioral equivalence?",
+                "nextScene": "whatIsBE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is cognitive equivalence?",
+                "nextScene": "whatIsCE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social valence?",
+                "nextScene": "whatIsSV"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social relations?",
+                "nextScene": "whatIsSR"
+            },
+            {
+                "type": "spoken",
+                "text": "What is potentiality?",
+                "nextScene": "whatIsPot"
+            },
+            {
+                "type": "spoken",
+                "text": "What is class membership?",
+                "nextScene": "whatIsCM"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -890,17 +1138,53 @@
         "visited": false,
         "dialogue": [
             {
-                "charID": "",
-                "type": "",
-                "charName": "",
-                "text": ""
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "Potentiality is the idea that entities with the potential to develop certain morally relevant capacities should qualify for moral standing, provided they retain their identity upon development."
+            },
+            {
+                "charID": "aida",
+                "type": "spoken",
+                "charName": "aida",
+                "text": "This might apply to certain current AI systems like advanced language models if their descendants are expected to develop capacities like preferences that matter, while retaining their identity."
             }
         ],
         "choice": [
             {
-                "type": "",
-                "text": "",
-                "nextScene": ""
+                "type": "spoken",
+                "text": "What is behavioral equivalence?",
+                "nextScene": "whatIsBE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is cognitive equivalence?",
+                "nextScene": "whatIsCE"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social valence?",
+                "nextScene": "whatIsSV"
+            },
+            {
+                "type": "spoken",
+                "text": "What is social relations?",
+                "nextScene": "whatIsSR"
+            },
+            {
+                "type": "spoken",
+                "text": "What is potentiality?",
+                "nextScene": "whatIsPot"
+            },
+            {
+                "type": "spoken",
+                "text": "What is class membership?",
+                "nextScene": "whatIsCM"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
@@ -954,8 +1238,13 @@
             },
             {
                 "type": "spoken",
-                "text": "back out",
-                "nextScene": ""
+                "text": "What is class membership?",
+                "nextScene": "whatIsCM"
+            },
+            {
+                "type": "spoken",
+                "text": "Actually, let's talk about something else.",
+                "nextScene": "whatIsMoralStand"
             }
         ]
     },
