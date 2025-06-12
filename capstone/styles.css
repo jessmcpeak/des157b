@@ -6,7 +6,7 @@ body {
     margin: auto;
     padding: 0 1.5em;
     max-width: 700px;
-    font-family: Helvetica;
+    font-family: 'Libre Baskerville';
     color: #33261A;
     background-color: #FFF2E6;
 }
@@ -20,13 +20,12 @@ img {
 }
 
 h1, h2, h3 {
-    font-weight: 600;
-    line-height: 100%;
+    font-weight: 400;
+    line-height: 160%;
 }
 
 h1 {
     font-size: 36px;
-    font-weight: 800;
 }
 
 h2 {
@@ -37,8 +36,8 @@ h3 {
     font-size: 16px;
 }
 
-p {
-    font-family: Georgia;
+p, li {
+    font-family: 'Work Sans';
     font-size: 18px;
     line-height: 160%;
 }
@@ -47,6 +46,7 @@ a {
     display: block;
     margin: 1em 0;
     padding: 1em;
+    font-family: 'Work Sans';
     text-align: center;
     text-decoration: none;
     font-size: 18px;
